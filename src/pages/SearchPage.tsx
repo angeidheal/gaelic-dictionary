@@ -26,6 +26,11 @@ const SearchPage: React.FC = () => {
   const navigate = useNavigate();
 
   const handleSearch = async (query: string) => {
+    if (query.length < 2) {
+      setResults([]);
+      return;
+    }
+
     setLoading(true);
     try {
       const searchResults = await searchDictionary(query);
@@ -41,7 +46,7 @@ const SearchPage: React.FC = () => {
   useEffect(() => {
     const debounceTimer = setTimeout(() => {
       handleSearch(searchQuery);
-    }, 300);
+    }, 500); // Increased debounce time to 500ms
 
     return () => clearTimeout(debounceTimer);
   }, [searchQuery]);
@@ -140,7 +145,7 @@ const SearchPage: React.FC = () => {
               <InputAdornment position="end">
                 <IconButton
                   edge="end"
-                  disabled={loading}
+                  disabled={loading || searchQuery.length < 2}
                 >
                   {loading ? <CircularProgress size={24} /> : <SearchIcon />}
                 </IconButton>
@@ -159,7 +164,7 @@ const SearchPage: React.FC = () => {
         </Typography>
       </Paper>
 
-      {searchQuery && (
+      {searchQuery.length >= 2 && (
         <List>
           {results.length > 0 ? (
             results.map((entry) => (

@@ -1,37 +1,47 @@
 import { DictionaryEntry } from '../types/DictionaryEntry';
 import { dictionaryData } from '../data/dictionaryData';
 
-export const searchDictionary = async (query: string): Promise<DictionaryEntry[]> => {
-  // Simulate API delay
-  await new Promise(resolve => setTimeout(resolve, 100));
+// Helper function to normalize text by removing accents
+const normalizeText = (text: string): string => {
+  return text
+    .toLowerCase()
+    .normalize('NFD')
+    .replace(/[\u0300-\u036f]/g, '') // Remove diacritics
+    .trim();
+};
 
-  const searchTerm = query.toLowerCase().trim();
+export const searchDictionary = async (query: string): Promise<DictionaryEntry[]> => {
+  const searchTerm = normalizeText(query);
   
   if (!searchTerm) {
     return [];
   }
 
-  return dictionaryData.filter(entry => 
-    entry.gaelic.toLowerCase().includes(searchTerm) ||
-    entry.definition.toLowerCase().includes(searchTerm) ||
-    entry.pronunciation.toLowerCase().includes(searchTerm) ||
-    entry.grammarNotes.toLowerCase().includes(searchTerm) ||
-    entry.translations.gaeilge.toLowerCase().includes(searchTerm) ||
-    entry.translations.gaidhligMhanainn.toLowerCase().includes(searchTerm) ||
-    entry.translations.beurla.toLowerCase().includes(searchTerm)
-  );
+  return dictionaryData.filter(entry => {
+    const normalizedGaelic = normalizeText(entry.gaelic);
+    const normalizedDefinition = normalizeText(entry.definition);
+    const normalizedPronunciation = normalizeText(entry.pronunciation);
+    const normalizedGrammarNotes = normalizeText(entry.grammarNotes);
+    const normalizedGaeilge = normalizeText(entry.translations.gaeilge);
+    const normalizedGaidhligMhanainn = normalizeText(entry.translations.gaidhligMhanainn);
+    const normalizedBeurla = normalizeText(entry.translations.beurla);
+
+    return (
+      normalizedGaelic.includes(searchTerm) ||
+      normalizedDefinition.includes(searchTerm) ||
+      normalizedPronunciation.includes(searchTerm) ||
+      normalizedGrammarNotes.includes(searchTerm) ||
+      normalizedGaeilge.includes(searchTerm) ||
+      normalizedGaidhligMhanainn.includes(searchTerm) ||
+      normalizedBeurla.includes(searchTerm)
+    );
+  });
 };
 
 export const getEntryById = async (id: string): Promise<DictionaryEntry | undefined> => {
-  // Simulate API delay
-  await new Promise(resolve => setTimeout(resolve, 100));
-  
   return dictionaryData.find(entry => entry.id === id);
 };
 
 export const getAllEntries = async (): Promise<DictionaryEntry[]> => {
-  // Simulate API delay
-  await new Promise(resolve => setTimeout(resolve, 100));
-  
   return dictionaryData;
 }; 
