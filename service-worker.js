@@ -1,12 +1,13 @@
 const CACHE_NAME = 'gaelic-dictionary-v1';
+const BASE_PATH = '/gaelic-dictionary';
 const urlsToCache = [
-  '/',
-  '/index.html',
-  '/manifest.json',
-  '/assets/logo.png',
-  '/logo192.png',
-  '/logo512.png',
-  '/favicon.ico'
+  `${BASE_PATH}/`,
+  `${BASE_PATH}/index.html`,
+  `${BASE_PATH}/manifest.json`,
+  `${BASE_PATH}/assets/logo.png`,
+  `${BASE_PATH}/logo192.png`,
+  `${BASE_PATH}/logo512.png`,
+  `${BASE_PATH}/favicon.ico`
 ];
 
 self.addEventListener('install', (event) => {
