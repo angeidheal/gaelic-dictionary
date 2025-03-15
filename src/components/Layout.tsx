@@ -54,7 +54,15 @@ const Layout: React.FC<LayoutProps> = ({ children, onThemeToggle, isDarkMode }) 
           boxShadow: 'none',
         }}
       >
-        <Toolbar sx={{ justifyContent: 'flex-end', gap: 2 }}>
+        <Toolbar 
+          sx={{ 
+            justifyContent: { xs: 'center', sm: 'flex-end' },
+            gap: 2,
+            flexWrap: { xs: 'wrap', sm: 'nowrap' },
+            minHeight: { xs: 'auto', sm: '64px' },
+            py: { xs: 1, sm: 0 }
+          }}
+        >
           <NavButton
             onClick={() => navigate('/')}
             ariaLabel="Go to home page"

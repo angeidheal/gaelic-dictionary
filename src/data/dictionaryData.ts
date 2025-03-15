@@ -5,8 +5,7 @@ export const dictionaryData: DictionaryEntry[] = [
     id: 'geidh',
     gaelic: 'gèidh',
     definition: 'Fireannach aig a bheil tàladh romansach no feiseil air fireannach eile.',
-    pronunciation: '',
-    grammarNotes: '',
+    grammarNotes: 'bua. coi. -e',
     translations: {
       gaeilge: 'aerach',
       gaidhligMhanainn: 'aeragh',
@@ -19,8 +18,7 @@ export const dictionaryData: DictionaryEntry[] = [
     id: 'leasbach',
     gaelic: 'leasbach',
     definition: 'Boireannach aig a bheil tàladh romansach no feiseil air boireannaich eile.',
-    pronunciation: '',
-    grammarNotes: '',
+    grammarNotes: '1. fir. gin. ⁊ iol. -aich\n2. bua. coi. -aiche',
     translations: {
       gaeilge: 'leispiach',
       gaidhligMhanainn: 'lesbeeagh',

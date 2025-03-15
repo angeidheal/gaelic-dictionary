@@ -20,7 +20,6 @@ export const searchDictionary = async (query: string): Promise<DictionaryEntry[]
   return dictionaryData.filter(entry => {
     const normalizedGaelic = normalizeText(entry.gaelic);
     const normalizedDefinition = normalizeText(entry.definition);
-    const normalizedPronunciation = normalizeText(entry.pronunciation);
     const normalizedGrammarNotes = normalizeText(entry.grammarNotes);
     const normalizedGaeilge = normalizeText(entry.translations.gaeilge);
     const normalizedGaidhligMhanainn = normalizeText(entry.translations.gaidhligMhanainn);
@@ -29,7 +28,6 @@ export const searchDictionary = async (query: string): Promise<DictionaryEntry[]
     return (
       normalizedGaelic.includes(searchTerm) ||
       normalizedDefinition.includes(searchTerm) ||
-      normalizedPronunciation.includes(searchTerm) ||
       normalizedGrammarNotes.includes(searchTerm) ||
       normalizedGaeilge.includes(searchTerm) ||
       normalizedGaidhligMhanainn.includes(searchTerm) ||

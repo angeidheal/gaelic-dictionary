@@ -130,13 +130,13 @@ const EntryPage: React.FC = () => {
       <Paper elevation={3} sx={{ p: 4, borderRadius: 2 }}>
         <Box display="flex" alignItems="center" mb={3}>
           <Typography variant="h3" component="h1" sx={{ flexGrow: 1 }}>
-            {entry.gaelic}
+            🏴󠁧󠁢󠁳󠁣󠁴󠁿 {entry.gaelic}
           </Typography>
           {hasAudio && (
             <IconButton
               onClick={handlePlayAudio}
               size="large"
-              aria-label={isPlaying ? "Stop pronunciation" : "Play pronunciation"}
+              aria-label={isPlaying ? "Stop audio" : "Play audio"}
               aria-pressed={isPlaying}
               role="button"
               sx={{ 
@@ -158,45 +158,39 @@ const EntryPage: React.FC = () => {
         </Box>
 
         <Typography variant="h6" color="text.secondary" gutterBottom>
-          {entry.pronunciation}
-        </Typography>
-
-        <Typography variant="h6" color="text.secondary" gutterBottom>
           {entry.definition}
         </Typography>
 
         <Divider sx={{ my: 3 }} />
 
-        <Grid container spacing={3}>
-          <Grid item xs={12} md={6}>
-            <Typography variant="h6" gutterBottom>
-              Gràmar
-            </Typography>
-            <Typography paragraph>{entry.grammarNotes}</Typography>
-          </Grid>
+        <Box>
+          <Typography variant="h6" gutterBottom>
+            Gràmar
+          </Typography>
+          <Typography paragraph sx={{ whiteSpace: 'pre-line' }}>{entry.grammarNotes}</Typography>
 
-          <Grid item xs={12} md={6}>
-            <Typography variant="h6" gutterBottom>
-              Eadar-theangachaidhean
-            </Typography>
-            <Box>
-              <Typography variant="subtitle1" gutterBottom>
-                Gaeilge:
-              </Typography>
-              <Typography paragraph>{entry.translations.gaeilge}</Typography>
+          <Divider sx={{ my: 3 }} />
 
-              <Typography variant="subtitle1" gutterBottom>
-                Gàidhlig Mhanainn:
-              </Typography>
-              <Typography paragraph>{entry.translations.gaidhligMhanainn}</Typography>
-
-              <Typography variant="subtitle1" gutterBottom>
-                Beurla:
-              </Typography>
-              <Typography paragraph>{entry.translations.beurla}</Typography>
+          <Typography variant="h6" gutterBottom>
+            Eadar-theangachaidhean
+          </Typography>
+          <Box>
+            <Box display="flex" alignItems="center" gap={2} mb={2}>
+              <Typography variant="subtitle1">🇮🇪</Typography>
+              <Typography>{entry.translations.gaeilge}</Typography>
             </Box>
-          </Grid>
-        </Grid>
+
+            <Box display="flex" alignItems="center" gap={2} mb={2}>
+              <Typography variant="subtitle1">🇮🇲</Typography>
+              <Typography>{entry.translations.gaidhligMhanainn}</Typography>
+            </Box>
+
+            <Box display="flex" alignItems="center" gap={2}>
+              <Typography variant="subtitle1">🏴󠁧󠁢󠁥󠁮󠁧󠁿</Typography>
+              <Typography>{entry.translations.beurla}</Typography>
+            </Box>
+          </Box>
+        </Box>
       </Paper>
     </Box>
   );

@@ -8,7 +8,6 @@ A modern, responsive web application for searching and exploring Scottish Gaelic
 - View detailed entries with:
   - Word definition
   - Grammar notes
-  - Audio pronunciation
   - Translations in multiple languages
 - Responsive design for all devices
 - Accessible interface

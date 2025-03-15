@@ -2,7 +2,6 @@ export interface DictionaryEntry {
   id: string;
   gaelic: string;
   definition: string;
-  pronunciation: string;
   grammarNotes: string;
   audioUrl?: string;
   translations: {
