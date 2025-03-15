@@ -1,17 +1,6 @@
-# Faclair na Gàidhlig - Scottish Gaelic Dictionary
+# Faclair nan Gèidheal
 
-A modern, responsive web application for searching and exploring Scottish Gaelic words, with translations in Irish Gaelic (Gaeilge), Manx Gaelic (Gàidhlig Mhanainn), and English (Beurla).
-
-## Features
-
-- Search Scottish Gaelic words
-- View detailed entries with:
-  - Word definition
-  - Grammar notes
-  - Translations in multiple languages
-- Responsive design for all devices
-- Accessible interface
-- Modern Material UI design
+A dictionary of Scottish Gaelic LGBTQIA+ voccabulary, with Irish, Manx and English translations.
 
 ## Prerequisites
 
