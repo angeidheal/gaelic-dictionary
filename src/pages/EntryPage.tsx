@@ -130,7 +130,7 @@ const EntryPage: React.FC = () => {
       <Paper elevation={3} sx={{ p: 4, borderRadius: 2 }}>
         <Box display="flex" alignItems="center" mb={3}>
           <Typography variant="h3" component="h1" sx={{ flexGrow: 1 }}>
-            🏴󠁧󠁢󠁳󠁣󠁴󠁿 {entry.gaelic}
+            {entry.gaelic}
           </Typography>
           {hasAudio && (
             <IconButton

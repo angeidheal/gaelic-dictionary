@@ -1,5 +1,5 @@
-const CACHE_NAME = 'gaelic-dictionary-v1';
-const BASE_PATH = '/gaelic-dictionary';
+const CACHE_NAME = 'faclair-nan-geidheal-v1';
+const BASE_PATH = '/faclair-nan-geidheal';
 const urlsToCache = [
   `${BASE_PATH}/`,
   `${BASE_PATH}/index.html`,

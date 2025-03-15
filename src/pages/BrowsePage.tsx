@@ -56,7 +56,7 @@ const BrowsePage: React.FC = () => {
             fontFamily: '"Lemonada", cursive',
           }}
         >
-          Na h-uile facal
+          Brabhsaich
         </Typography>
       </Box>
       <List>

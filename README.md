@@ -23,8 +23,8 @@ A modern, responsive web application for searching and exploring Scottish Gaelic
 
 1. Clone the repository:
 ```bash
-git clone https://github.com/yourusername/gaelic-dictionary.git
-cd gaelic-dictionary
+git clone https://github.com/yourusername/faclair-nan-geidheal.git
+cd faclair-nan-geidheal
 ```
 
 2. Install dependencies:
@@ -35,7 +35,7 @@ npm install
 3. Set up environment variables:
 Create a `.env` file in the root directory with the following content:
 ```
-MONGODB_URI=mongodb://localhost:27017/gaelic-dictionary
+MONGODB_URI=mongodb://localhost:27017/faclair-nan-geidheal
 PORT=3001
 ```
 

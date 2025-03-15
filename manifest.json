@@ -3,22 +3,22 @@
   "name": "Faclair nan Gèidheal",
   "icons": [
     {
-      "src": "/gaelic-dictionary/assets/logo.png",
+      "src": "/faclair-nan-geidheal/assets/logo.png",
       "sizes": "64x64 32x32 24x24 16x16",
       "type": "image/png"
     },
     {
-      "src": "/gaelic-dictionary/assets/logo.png",
+      "src": "/faclair-nan-geidheal/assets/logo.png",
       "type": "image/png",
       "sizes": "192x192"
     },
     {
-      "src": "/gaelic-dictionary/assets/logo.png",
+      "src": "/faclair-nan-geidheal/assets/logo.png",
       "type": "image/png",
       "sizes": "512x512"
     }
   ],
-  "start_url": "/gaelic-dictionary/",
+  "start_url": "/faclair-nan-geidheal/",
   "display": "standalone",
   "theme_color": "#000000",
   "background_color": "#ffffff"
