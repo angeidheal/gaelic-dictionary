@@ -1249,4 +1249,4 @@ export const dictionaryData: DictionaryEntry[] = [
     createdAt: new Date('2024-03-15'),
     updatedAt: new Date('2024-03-15')
   }
-];
+]; 
