@@ -121,7 +121,7 @@ const SearchPage: React.FC = () => {
               },
             }}
           >
-            An Gèidheal Ùr
+            a' Ghèidheal Ùr
           </Link>
         </Typography>
       </Box>
