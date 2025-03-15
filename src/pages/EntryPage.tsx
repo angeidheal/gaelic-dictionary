@@ -157,38 +157,23 @@ const EntryPage: React.FC = () => {
           )}
         </Box>
 
-        <Typography variant="h6" color="text.secondary" gutterBottom>
-          {entry.definition}
+        <Typography variant="h6" gutterBottom>
+          Eadar-theangachaidhean
         </Typography>
-
-        <Divider sx={{ my: 3 }} />
-
         <Box>
-          <Typography variant="h6" gutterBottom>
-            Gràmar
-          </Typography>
-          <Typography paragraph sx={{ whiteSpace: 'pre-line' }}>{entry.grammarNotes}</Typography>
+          <Box display="flex" alignItems="center" gap={2} mb={2}>
+            <Typography variant="subtitle1">🇮🇪</Typography>
+            <Typography>{entry.translations.gaeilge}</Typography>
+          </Box>
 
-          <Divider sx={{ my: 3 }} />
+          <Box display="flex" alignItems="center" gap={2} mb={2}>
+            <Typography variant="subtitle1">🇮🇲</Typography>
+            <Typography>{entry.translations.gaidhligMhanainn}</Typography>
+          </Box>
 
-          <Typography variant="h6" gutterBottom>
-            Eadar-theangachaidhean
-          </Typography>
-          <Box>
-            <Box display="flex" alignItems="center" gap={2} mb={2}>
-              <Typography variant="subtitle1">🇮🇪</Typography>
-              <Typography>{entry.translations.gaeilge}</Typography>
-            </Box>
-
-            <Box display="flex" alignItems="center" gap={2} mb={2}>
-              <Typography variant="subtitle1">🇮🇲</Typography>
-              <Typography>{entry.translations.gaidhligMhanainn}</Typography>
-            </Box>
-
-            <Box display="flex" alignItems="center" gap={2}>
-              <Typography variant="subtitle1">🏴󠁧󠁢󠁥󠁮󠁧󠁿</Typography>
-              <Typography>{entry.translations.beurla}</Typography>
-            </Box>
+          <Box display="flex" alignItems="center" gap={2}>
+            <Typography variant="subtitle1">🏴󠁧󠁢󠁥󠁮󠁧󠁿</Typography>
+            <Typography>{entry.translations.beurla}</Typography>
           </Box>
         </Box>
       </Paper>
