@@ -180,7 +180,7 @@ const EntryPage: React.FC = () => {
                   }
                 }}
               >
-                Chan eil eadar-theangachadh againn. Cuir moladh dhuinn
+                Chan eil eadar-theangachadh againn. Cuir moladh dhuinn.
               </Link>
             )}
           </Box>
@@ -201,7 +201,7 @@ const EntryPage: React.FC = () => {
                   }
                 }}
               >
-                Chan eil eadar-theangachadh againn. Cuir moladh dhuinn
+                Chan eil eadar-theangachadh againn. Cuir moladh dhuinn.
               </Link>
             )}
           </Box>
@@ -222,7 +222,7 @@ const EntryPage: React.FC = () => {
                   }
                 }}
               >
-                Chan eil eadar-theangachadh againn. Cuir moladh dhuinn
+                Chan eil eadar-theangachadh againn. Cuir moladh dhuinn.
               </Link>
             )}
           </Box>
