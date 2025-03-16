@@ -10,6 +10,7 @@ import {
   Fab,
   Zoom,
   useScrollTrigger,
+  Paper,
 } from '@mui/material';
 import ChevronRightIcon from '@mui/icons-material/ChevronRight';
 import KeyboardArrowUpIcon from '@mui/icons-material/KeyboardArrowUp';
@@ -68,24 +69,26 @@ const BrowsePage: React.FC = () => {
   }
 
   return (
-    <Box sx={{ position: 'relative', minHeight: '100vh' }}>
-      <Box sx={{ maxWidth: 800, mx: 'auto', p: { xs: 2, sm: 3 }, pb: 8 }}>
+    <>
+      <Box sx={{ mb: 4 }}>
         <Typography 
           variant="h4" 
           component="h1" 
           sx={{ 
-            mb: 4, 
-            textAlign: 'center',
-            fontSize: { xs: '1.75rem', sm: '2.125rem' },
-            wordWrap: 'break-word',
-            fontFamily: '"Lemonada", cursive',
             fontWeight: 700,
+            fontFamily: '"Lemonada", cursive',
           }}
-          id="page-heading"
         >
           Brabhsaich
         </Typography>
+      </Box>
 
+      <Paper 
+        sx={{ 
+          p: 4,
+          mb: 4,
+        }}
+      >
         <List 
           role="navigation" 
           aria-label="Liosta nam faclan"
@@ -138,7 +141,7 @@ const BrowsePage: React.FC = () => {
             </ListItemButton>
           ))}
         </List>
-      </Box>
+      </Paper>
 
       <Zoom in={trigger}>
         <Box
@@ -171,7 +174,7 @@ const BrowsePage: React.FC = () => {
           </Fab>
         </Box>
       </Zoom>
-    </Box>
+    </>
   );
 };
 
