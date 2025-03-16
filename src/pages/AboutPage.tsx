@@ -2,8 +2,8 @@ import React from 'react';
 import {
   Box,
   Typography,
-  Link,
   Paper,
+  Link as MuiLink,
 } from '@mui/material';
 
 const AboutPage: React.FC = () => {
@@ -24,7 +24,7 @@ const AboutPage: React.FC = () => {
 
       <Paper sx={{ p: 4, mb: 4 }}>
         <Typography variant="body1" paragraph>
-          Seo faclair de bhriathrachas LGBTQIA+ a tha Crìstean MacMhìcheil air a bhith a' cruinneachadh mar phàirt dhen obair aige air blog naidheachd LGBTQIA+ <a href="https://angeidhealur.scot/" style={{ color: 'inherit' }}>a' Ghèidheil Ùire</a>.
+          Seo faclair de bhriathrachas LGBTQIA+ a tha Crìstean MacMhìcheil air a bhith a' cruinneachadh mar phàirt dhen obair aige air blog naidheachd LGBTQIA+ <MuiLink href="https://angeidhealur.scot/" target="_blank" rel="noopener noreferrer">a' Ghèidheil Ùire</MuiLink>.
         </Typography>
       </Paper>
 
@@ -36,9 +36,9 @@ const AboutPage: React.FC = () => {
           Ma tha ceist no moladh agaibh, cuiribh fios thugainn aig:
           <br />
           <br />
-          <a href="mailto:fios@angeidhealur.scot" style={{ color: 'inherit' }}>
+          <MuiLink href="mailto:fios@angeidhealur.scot">
             fios@angeidhealur.scot
-          </a>
+          </MuiLink>
         </Typography>
       </Paper>
     </>

@@ -7,7 +7,6 @@ import {
   Typography,
   Container,
   useTheme,
-  useMediaQuery,
   IconButton,
 } from '@mui/material';
 import Brightness4Icon from '@mui/icons-material/Brightness4';
@@ -22,7 +21,6 @@ interface LayoutProps {
 
 const Layout: React.FC<LayoutProps> = ({ children, onThemeToggle, isDarkMode }) => {
   const theme = useTheme();
-  const isMobile = useMediaQuery(theme.breakpoints.down('sm'));
   const navigate = useNavigate();
 
   return (

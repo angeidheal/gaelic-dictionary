@@ -92,6 +92,22 @@ export const EntryPage = () => {
     };
   }, [id]);
 
+  useEffect(() => {
+    if (sound) {
+      sound.on('play', () => setIsPlaying(true));
+      sound.on('end', () => setIsPlaying(false));
+      sound.on('stop', () => setIsPlaying(false));
+      sound.on('loaderror', () => {
+        setAudioError("Duilgheadas a' luchdachadh an fhuaim");
+        setHasAudio(false);
+      });
+
+      return () => {
+        sound.unload();
+      };
+    }
+  }, [sound]);
+
   const handlePlayAudio = () => {
     if (sound) {
       if (isPlaying) {
