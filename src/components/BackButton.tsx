@@ -9,7 +9,7 @@ interface BackButtonProps {
   navigateTo?: string;
 }
 
-const BackButton: React.FC<BackButtonProps> = ({ variant = 'text', sx = {}, navigateTo = '/' }) => {
+const BackButton: React.FC<BackButtonProps> = ({ variant = 'contained', sx = {}, navigateTo = '/' }) => {
   const navigate = useNavigate();
 
   return (
@@ -18,9 +18,18 @@ const BackButton: React.FC<BackButtonProps> = ({ variant = 'text', sx = {}, navi
       onClick={() => navigate(navigateTo)}
       variant={variant}
       aria-label={`Go back to ${navigateTo === '/' ? 'home' : 'previous'} page`}
-      sx={{ mb: 2, ...sx }}
+      sx={{ 
+        mb: 2,
+        fontWeight: 500,
+        backgroundColor: 'primary.main',
+        color: 'white',
+        '&:hover': {
+          backgroundColor: 'primary.dark',
+        },
+        ...sx 
+      }}
     >
-      Till
+      Air ais
     </Button>
   );
 };

@@ -130,9 +130,7 @@ const EntryPage: React.FC = () => {
 
   return (
     <Box>
-      <BackButton navigateTo={previousPath} />
-
-      <Paper elevation={3} sx={{ p: 4, borderRadius: 2 }}>
+      <Paper elevation={3} sx={{ p: 4, borderRadius: 2, mb: 3 }}>
         <Box display="flex" alignItems="center" mb={3}>
           <Typography variant="h3" component="h1" sx={{ flexGrow: 1 }}>
             {entry.gaelic}
@@ -173,11 +171,12 @@ const EntryPage: React.FC = () => {
             ) : (
               <Link 
                 href="mailto:fios@angeidhealur.scot"
-                color="primary"
                 sx={{ 
                   textDecoration: 'none',
+                  color: 'error.main',
                   '&:hover': {
-                    textDecoration: 'underline'
+                    textDecoration: 'underline',
+                    color: 'error.dark'
                   }
                 }}
               >
@@ -193,11 +192,12 @@ const EntryPage: React.FC = () => {
             ) : (
               <Link 
                 href="mailto:fios@angeidhealur.scot"
-                color="primary"
                 sx={{ 
                   textDecoration: 'none',
+                  color: 'error.main',
                   '&:hover': {
-                    textDecoration: 'underline'
+                    textDecoration: 'underline',
+                    color: 'error.dark'
                   }
                 }}
               >
@@ -213,11 +213,12 @@ const EntryPage: React.FC = () => {
             ) : (
               <Link 
                 href="mailto:fios@angeidhealur.scot"
-                color="primary"
                 sx={{ 
                   textDecoration: 'none',
+                  color: 'error.main',
                   '&:hover': {
-                    textDecoration: 'underline'
+                    textDecoration: 'underline',
+                    color: 'error.dark'
                   }
                 }}
               >
@@ -227,6 +228,9 @@ const EntryPage: React.FC = () => {
           </Box>
         </Box>
       </Paper>
+      <Box display="flex" justifyContent="center">
+        <BackButton navigateTo={previousPath} />
+      </Box>
     </Box>
   );
 };

@@ -20,8 +20,8 @@ export const dictionaryData: DictionaryEntry[] = [
     definition: 'Achd Pàrlamaid na h-Alba a tha a\' toirt mathanas do dhaoine a chaidh a dhìteadh airson a bhith ri feise le daoine dhen aon ghnè nuair a bha e mì-laghail.',
     grammarNotes: 'boir. gin. Achd nan Eucoirean Feise Eachdraidheil',
     translations: {
-      gaeilge: 'Acht um Chionta Gnéasacha Stairiúla (Maithiúnas agus Dearmaid) (Albain) 2018',
-      gaidhligMhanainn: 'Slattys Loghtyn Kynreyghyn Shaghynagh (Leih as Leodaghey) (Nalbin) 2018',
+      gaeilge: '',
+      gaidhligMhanainn: '',
       beurla: 'Historical Sexual Offences (Pardons and Disregards) (Scotland) Act 2018'
     },
     createdAt: new Date('2024-03-15'),
@@ -397,9 +397,9 @@ export const dictionaryData: DictionaryEntry[] = [
     definition: 'Neach a tha ann an dàimh le cuideigin eile.',
     grammarNotes: 'fir. gin. caidreabhaich, iol. caidreabhaich',
     translations: {
-      gaeilge: 'páirtnéir',
-      gaidhligMhanainn: 'carrey',
-      beurla: 'partner'
+      gaeilge: 'comhghuaillí',
+      gaidhligMhanainn: 'cumraag',
+      beurla: 'ally'
     },
     createdAt: new Date('2024-03-15'),
     updatedAt: new Date('2024-03-15')
@@ -410,21 +410,21 @@ export const dictionaryData: DictionaryEntry[] = [
     definition: 'Tachartas far a bheil daoine LGDT+ agus an luchd-taice a\' coiseachd còmhla airson còirichean co-ionann a chomharrachadh.',
     grammarNotes: 'boir. gin. caismeachd pròise, iol. caismeachdan pròise',
     translations: {
-      gaeilge: 'mórshiúl bróid',
-      gaidhligMhanainn: 'parade moyrn',
+      gaeilge: 'paráid bhròid',
+      gaidhligMhanainn: '',
       beurla: 'pride march'
     },
     createdAt: new Date('2024-03-15'),
     updatedAt: new Date('2024-03-15')
   },
   {
-    id: 'caraid-aon-ghneitheach',
-    gaelic: 'càraid aon-ghnèitheach',
+    id: 'caraid-aon-sheòrsach',
+    gaelic: 'càraid aon-sheòrsach',
     definition: 'Dithis dhen aon ghnè a tha ann an dàimh le chèile.',
-    grammarNotes: 'fir. gin. càraid aon-ghnèithich, iol. càraidean aon-ghnèitheach',
+    grammarNotes: 'fir. gin. càraid aon-sheòrsaich, iol. càraidean aon-sheòrsach',
     translations: {
-      gaeilge: 'lánúin chomhinscneach',
-      gaidhligMhanainn: 'çhiass un-kynnagh',
+      gaeilge: 'lánúin chomhghnéis',
+      gaidhligMhanainn: '',
       beurla: 'same-sex couple'
     },
     createdAt: new Date('2024-03-15'),
@@ -436,8 +436,8 @@ export const dictionaryData: DictionaryEntry[] = [
     definition: 'Cungaidh-leighis a tha a\' cur stad air atharrachaidhean bodhaige a thig le inbheachd.',
     grammarNotes: 'fir. gin. casg-inbheachd',
     translations: {
-      gaeilge: 'bacadh caithreachais',
-      gaidhligMhanainn: 'lhiettal aasid',
+      gaeilge: '',
+      gaidhligMhanainn: '',
       beurla: 'puberty blocker'
     },
     createdAt: new Date('2024-03-15'),
@@ -450,7 +450,7 @@ export const dictionaryData: DictionaryEntry[] = [
     grammarNotes: 'fir. gin. ceasnachaidh',
     translations: {
       gaeilge: 'ceistiú',
-      gaidhligMhanainn: 'feyshtyn',
+      gaidhligMhanainn: 'keishtey',
       beurla: 'questioning'
     },
     createdAt: new Date('2024-03-15'),
@@ -463,8 +463,8 @@ export const dictionaryData: DictionaryEntry[] = [
     grammarNotes: 'fir./boir. gin. cèile dhen aon-ghnè, iol. cèilean dhen aon-ghnè',
     translations: {
       gaeilge: 'céile comhinscneach',
-      gaidhligMhanainn: 'çhiass un-kynnagh',
-      beurla: 'same-sex spouse'
+      gaidhligMhanainn: '',
+      beurla: 'same-sex partner'
     },
     createdAt: new Date('2024-03-15'),
     updatedAt: new Date('2024-03-15')
@@ -490,7 +490,7 @@ export const dictionaryData: DictionaryEntry[] = [
     translations: {
       gaeilge: 'cis-inscneachas',
       gaidhligMhanainn: 'cis-kynnidys',
-      beurla: 'cisgenderism'
+      beurla: 'cissexism'
     },
     createdAt: new Date('2024-03-15'),
     updatedAt: new Date('2024-03-15')
@@ -501,8 +501,8 @@ export const dictionaryData: DictionaryEntry[] = [
     definition: 'An smuain gu bheil e àbhaisteach a bhith cios-ghnèitheach agus neo-àbhaisteach a bhith tar-ghnèitheach.',
     grammarNotes: 'boir. gin. cios-nòrmadachd',
     translations: {
-      gaeilge: 'cis-normatacht',
-      gaidhligMhanainn: 'cis-cadjinys',
+      gaeilge: 'cis-ghnáthach',
+      gaidhligMhanainn: '',
       beurla: 'cisnormativity'
     },
     createdAt: new Date('2024-03-15'),
@@ -554,7 +554,7 @@ export const dictionaryData: DictionaryEntry[] = [
     grammarNotes: 'bua. coi. -aiche',
     translations: {
       gaeilge: 'homaighnéasach',
-      gaidhligMhanainn: 'co-heltynagh',
+      gaidhligMhanainn: 'homocheintagh',
       beurla: 'homosexual'
     },
     createdAt: new Date('2024-03-15'),
@@ -567,7 +567,7 @@ export const dictionaryData: DictionaryEntry[] = [
     grammarNotes: 'boir. gin. co-sheòrsachd',
     translations: {
       gaeilge: 'homaighnéasacht',
-      gaidhligMhanainn: 'co-heltynys',
+      gaidhligMhanainn: 'homocheintys',
       beurla: 'homosexuality'
     },
     createdAt: new Date('2024-03-15'),
@@ -579,8 +579,8 @@ export const dictionaryData: DictionaryEntry[] = [
     definition: 'Nuair a tha daoine a\' faighinn an aon chòirichean.',
     grammarNotes: 'iol.',
     translations: {
-      gaeilge: 'cearta comhionanna',
-      gaidhligMhanainn: 'kiartyn corrym',
+      gaeilge: 'comhchearta / cearta comhionanna',
+      gaidhligMhanainn: 'kiartyn cochorrym',
       beurla: 'equal rights'
     },
     createdAt: new Date('2024-03-15'),
@@ -593,7 +593,7 @@ export const dictionaryData: DictionaryEntry[] = [
     grammarNotes: 'iol.',
     translations: {
       gaeilge: 'cearta aeracha agus leispiacha',
-      gaidhligMhanainn: 'kiartyn aeragh as lhesbiagh',
+      gaidhligMhanainn: '',
       beurla: 'gay and lesbian rights'
     },
     createdAt: new Date('2024-03-15'),
@@ -606,7 +606,7 @@ export const dictionaryData: DictionaryEntry[] = [
     grammarNotes: 'fir. gin. cròmasaim, iol. cròmasoman',
     translations: {
       gaeilge: 'crómasóm',
-      gaidhligMhanainn: 'cromosom',
+      gaidhligMhanainn: 'kroymasoom',
       beurla: 'chromosome'
     },
     createdAt: new Date('2024-03-15'),
@@ -618,8 +618,8 @@ export const dictionaryData: DictionaryEntry[] = [
     definition: 'Neach aig a bheil dearbh-aithne gnè neo-bhìnearaidh.',
     grammarNotes: 'bua. coi. -ich',
     translations: {
-      gaeilge: 'cuair-inscneach',
-      gaidhligMhanainn: 'queer-kynnagh',
+      gaeilge: '',
+      gaidhligMhanainn: '',
       beurla: 'genderqueer'
     },
     createdAt: new Date('2024-03-15'),
@@ -631,8 +631,8 @@ export const dictionaryData: DictionaryEntry[] = [
     definition: 'Facal-sgàile airson daoine LGDT+ a chaidh ath-ghlacadh mar fhacal deimhinneach.',
     grammarNotes: 'bua.',
     translations: {
-      gaeilge: 'cuair',
-      gaidhligMhanainn: 'queer',
+      gaeilge: 'aiteach',
+      gaidhligMhanainn: 'quaagh',
       beurla: 'queer'
     },
     createdAt: new Date('2024-03-15'),
@@ -644,8 +644,8 @@ export const dictionaryData: DictionaryEntry[] = [
     definition: 'Rudan a tha a\' buntainn ri gnè.',
     grammarNotes: 'iol.',
     translations: {
-      gaeilge: 'cúrsaí inscne',
-      gaidhligMhanainn: 'cooishyn kynney',
+      gaeilge: '',
+      gaidhligMhanainn: '',
       beurla: 'gender issues'
     },
     createdAt: new Date('2024-03-15'),
@@ -670,8 +670,8 @@ export const dictionaryData: DictionaryEntry[] = [
     definition: 'Neach aig a bheil tàladh romansach no feiseil air daoine de ghnè sam bith.',
     grammarNotes: 'bua. coi. -aiche',
     translations: {
-      gaeilge: 'dáthreoch',
-      gaidhligMhanainn: 'daa-heltynagh',
+      gaeilge: 'déghnéasach',
+      gaidhligMhanainn: 'daa-cheintyssagh',
       beurla: 'bisexual'
     },
     createdAt: new Date('2024-03-15'),
@@ -683,7 +683,7 @@ export const dictionaryData: DictionaryEntry[] = [
     definition: 'Neach ann an cuid de chultaran dùthchasach Ameireagaidh a Tuath aig a bheil spiorad fireann agus boireann.',
     grammarNotes: 'bua. coi. -aiche',
     translations: {
-      gaeilge: 'dé-spioradach',
+      gaeilge: 'dé-anamúil',
       gaidhligMhanainn: 'daa-spyrrydagh',
       beurla: 'two-spirit'
     },
@@ -709,8 +709,8 @@ export const dictionaryData: DictionaryEntry[] = [
     definition: 'Nuair a tha cuideigin a\' tilleadh air ais dhan ghnè a bh\' aca roimhe.',
     grammarNotes: 'fir. gin. dì-eadar-ghluasaid',
     translations: {
-      gaeilge: 'dí-aistriú',
-      gaidhligMhanainn: 'neu-chaghlaays',
+      gaeilge: 'díthrasdul',
+      gaidhligMhanainn: '',
       beurla: 'detransition'
     },
     createdAt: new Date('2024-03-15'),
@@ -722,7 +722,7 @@ export const dictionaryData: DictionaryEntry[] = [
     definition: 'A\' cur air aodach gnè eile mar phàirt de thaisbeanadh ealain.',
     grammarNotes: 'fir. gin. draga',
     translations: {
-      gaeilge: 'drag',
+      gaeilge: 'draig',
       gaidhligMhanainn: 'drag',
       beurla: 'drag'
     },
@@ -735,8 +735,8 @@ export const dictionaryData: DictionaryEntry[] = [
     definition: 'Nuair a tha cuideigin a\' faighinn aithneachadh laghail air an gnè ùr aca.',
     grammarNotes: 'fir. gin. eadar-ghluasaid laghail',
     translations: {
-      gaeilge: 'aistriú dlíthiúil',
-      gaidhligMhanainn: 'caghlaa leigh',
+      gaeilge: 'trasdul dhlíthiúil',
+      gaidhligMhanainn: '',
       beurla: 'legal transition'
     },
     createdAt: new Date('2024-03-15'),
@@ -748,8 +748,8 @@ export const dictionaryData: DictionaryEntry[] = [
     definition: 'Nuair a tha cuideigin a\' cleachdadh leigheas meadaigeach gus an coltas aca atharrachadh.',
     grammarNotes: 'fir. gin. eadar-ghluasaid mheadaigich',
     translations: {
-      gaeilge: 'aistriú leighis',
-      gaidhligMhanainn: 'caghlaa lheeys',
+      gaeilge: 'trasdul leighis',
+      gaidhligMhanainn: '',
       beurla: 'medical transition'
     },
     createdAt: new Date('2024-03-15'),
@@ -761,8 +761,8 @@ export const dictionaryData: DictionaryEntry[] = [
     definition: 'Nuair a tha cuideigin a\' tòiseachadh a\' fuireach mar ghnè eile.',
     grammarNotes: 'fir. gin. eadar-ghluasaid shòisealta',
     translations: {
-      gaeilge: 'aistriú sóisialta',
-      gaidhligMhanainn: 'caghlaa sheshoayllagh',
+      gaeilge: 'trasdul shóisialta',
+      gaidhligMhanainn: '',
       beurla: 'social transition'
     },
     createdAt: new Date('2024-03-15'),
@@ -774,8 +774,8 @@ export const dictionaryData: DictionaryEntry[] = [
     definition: 'Nuair a tha cuideigin a\' gluasad bho aon ghnè gu gnè eile.',
     grammarNotes: 'fir. gin. eadar-ghluasaid, iol. eadar-ghluasadan',
     translations: {
-      gaeilge: 'aistriú',
-      gaidhligMhanainn: 'caghlaa',
+      gaeilge: 'trasdul',
+      gaidhligMhanainn: '',
       beurla: 'transition'
     },
     createdAt: new Date('2024-03-15'),
@@ -787,9 +787,9 @@ export const dictionaryData: DictionaryEntry[] = [
     definition: 'Neach a rugadh le feartan gnè measgaichte.',
     grammarNotes: 'bua. coi. -ich',
     translations: {
-      gaeilge: 'idirghnéasach',
-      gaidhligMhanainn: 'eddyr-kynnagh',
-      beurla: 'intersex'
+      gaeilge: 'idir-inscneach',
+      gaidhligMhanainn: '',
+      beurla: 'intergender'
     },
     createdAt: new Date('2024-03-15'),
     updatedAt: new Date('2024-03-15')
@@ -800,8 +800,8 @@ export const dictionaryData: DictionaryEntry[] = [
     definition: 'Neach aig a bheil tàladh romansach no feiseil air daoine de ghnè sam bith.',
     grammarNotes: 'bua. coi. -aiche',
     translations: {
-      gaeilge: 'dáthreoch',
-      gaidhligMhanainn: 'daa-heltynagh',
+      gaeilge: 'idirghnéasach',
+      gaidhligMhanainn: '',
       beurla: 'bisexual'
     },
     createdAt: new Date('2024-03-15'),
@@ -813,8 +813,8 @@ export const dictionaryData: DictionaryEntry[] = [
     definition: 'Tàladh feiseil air daoine dhen aon ghnè.',
     grammarNotes: 'boir. gin. earotaigeachd cho-sheòrsaich',
     translations: {
-      gaeilge: 'homaighnéasacht',
-      gaidhligMhanainn: 'co-heltynys',
+      gaeilge: 'homa-earótachas',
+      gaidhligMhanainn: '',
       beurla: 'homoeroticism'
     },
     createdAt: new Date('2024-03-15'),
@@ -827,7 +827,7 @@ export const dictionaryData: DictionaryEntry[] = [
     grammarNotes: 'boir. gin. eastraigin',
     translations: {
       gaeilge: 'éastraigin',
-      gaidhligMhanainn: 'estrogen',
+      gaidhligMhanainn: '',
       beurla: 'estrogen'
     },
     createdAt: new Date('2024-03-15'),
@@ -840,7 +840,7 @@ export const dictionaryData: DictionaryEntry[] = [
     grammarNotes: 'bua. coi. -aiche',
     translations: {
       gaeilge: 'heitrighnéasach',
-      gaidhligMhanainn: 'streightagh',
+      gaidhligMhanainn: 'hetracheintyssagh',
       beurla: 'heterosexual'
     },
     createdAt: new Date('2024-03-15'),
@@ -852,8 +852,8 @@ export const dictionaryData: DictionaryEntry[] = [
     definition: 'Neach aig a bheil dearbh-aithne gnè a tha eadar-dhealaichte bhon ghnè a chaidh a bhuileachadh orra nuair a rugadh iad.',
     grammarNotes: 'bua. coi. -ich',
     translations: {
-      gaeilge: 'tras-inscneach',
-      gaidhligMhanainn: 'tar-kynnagh',
+      gaeilge: 'inscne-aiteach',
+      gaidhligMhanainn: '',
       beurla: 'transgender'
     },
     createdAt: new Date('2024-03-15'),
@@ -865,8 +865,8 @@ export const dictionaryData: DictionaryEntry[] = [
     definition: 'Fireannach a tha a\' gabhail pàirt èigneachail ann am feise.',
     grammarNotes: 'fir. gin. fir foidhe, iol. fir foidhe',
     translations: {
-      gaeilge: 'fear faoi',
-      gaidhligMhanainn: 'dooinney fo',
+      gaeilge: 'bunadóir / bunpháirtí',
+      gaidhligMhanainn: '',
       beurla: 'bottom'
     },
     createdAt: new Date('2024-03-15'),
@@ -879,7 +879,7 @@ export const dictionaryData: DictionaryEntry[] = [
     grammarNotes: 'fir. gin. fir-ghèidh, iol. fir-ghèidh',
     translations: {
       gaeilge: 'fear aerach',
-      gaidhligMhanainn: 'dooinney aeragh',
+      gaidhligMhanainn: 'fer aeragh',
       beurla: 'gay man'
     },
     createdAt: new Date('2024-03-15'),
@@ -891,8 +891,8 @@ export const dictionaryData: DictionaryEntry[] = [
     definition: 'Fireannach a tha a\' gabhail pàirt ghnìomhach ann am feise.',
     grammarNotes: 'fir. gin. fir os a chionn, iol. fir os an cionn',
     translations: {
-      gaeilge: 'fear os a chionn',
-      gaidhligMhanainn: 'dooinney erskyn',
+      gaeilge: 'barradóir / barrpháirtí',
+      gaidhligMhanainn: '',
       beurla: 'top'
     },
     createdAt: new Date('2024-03-15'),
@@ -904,8 +904,8 @@ export const dictionaryData: DictionaryEntry[] = [
     definition: 'Coltas agus giùlan a tha daoine a\' ceangal ri gnè sònraichte.',
     grammarNotes: 'iol.',
     translations: {
-      gaeilge: 'tréithe inscne',
-      gaidhligMhanainn: 'cowraghyn kynney',
+      gaeilge: 'tréithe gnéis',
+      gaidhligMhanainn: '',
       beurla: 'gender characteristics'
     },
     createdAt: new Date('2024-03-15'),
@@ -917,8 +917,8 @@ export const dictionaryData: DictionaryEntry[] = [
     definition: 'An còir a th\' aig daoine air co-dhùnaidhean a dhèanamh mu na bodhaigean aca fhèin.',
     grammarNotes: 'fir. gin. féin-riaghlaidh na bodhaige',
     translations: {
-      gaeilge: 'féinriar coirp',
-      gaidhligMhanainn: 'rheynn-callin',
+      gaeilge: 'féinriail coirp',
+      gaidhligMhanainn: '',
       beurla: 'bodily autonomy'
     },
     createdAt: new Date('2024-03-15'),
@@ -930,8 +930,8 @@ export const dictionaryData: DictionaryEntry[] = [
     definition: 'Tachartas far a bheil daoine LGDT+ agus an luchd-taice a\' tighinn còmhla airson còirichean co-ionann a chomharrachadh.',
     grammarNotes: 'boir. gin. féise-pròise, iol. féisean-pròise',
     translations: {
-      gaeilge: 'féile bróid',
-      gaidhligMhanainn: 'feailley moyrn',
+      gaeilge: 'féile bhròid',
+      gaidhligMhanainn: '',
       beurla: 'pride festival'
     },
     createdAt: new Date('2024-03-15'),
@@ -944,7 +944,7 @@ export const dictionaryData: DictionaryEntry[] = [
     grammarNotes: 'boir. gin. feisealachd',
     translations: {
       gaeilge: 'gnéasacht',
-      gaidhligMhanainn: 'reyid',
+      gaidhligMhanainn: 'colleaght',
       beurla: 'sexuality'
     },
     createdAt: new Date('2024-03-15'),
@@ -958,7 +958,7 @@ export const dictionaryData: DictionaryEntry[] = [
     translations: {
       gaeilge: 'fireann go baineann',
       gaidhligMhanainn: 'firryn gys bwoirryn',
-      beurla: 'male to female'
+      beurla: 'male to female (MTF)'
     },
     createdAt: new Date('2024-03-15'),
     updatedAt: new Date('2024-03-15')
@@ -969,8 +969,8 @@ export const dictionaryData: DictionaryEntry[] = [
     definition: 'Neach a tha a\' nochdadh feartan gnè fireannach.',
     grammarNotes: 'bua.',
     translations: {
-      gaeilge: 'fireann-léirithe',
-      gaidhligMhanainn: 'firryn-chaghlaa',
+      gaeilge: 'léiriú fireann',
+      gaidhligMhanainn: '',
       beurla: 'masculine-presenting'
     },
     createdAt: new Date('2024-03-15'),
@@ -983,7 +983,7 @@ export const dictionaryData: DictionaryEntry[] = [
     grammarNotes: 'iol.',
     translations: {
       gaeilge: 'fir a mbíonn gnéas acu le fir',
-      gaidhligMhanainn: 'deiney ta jannoo graih rish deiney',
+      gaidhligMhanainn: '',
       beurla: 'men who have sex with men'
     },
     createdAt: new Date('2024-03-15'),
@@ -991,13 +991,13 @@ export const dictionaryData: DictionaryEntry[] = [
   },
   {
     id: 'fratt',
-    gaelic: 'FRATT',
+    gaelic: 'FRATT (Feimineach Radaigeach Tar-thoirmeasgach)',
     definition: 'Feimineach Radaigeach Tar-thoirmeasgach',
     grammarNotes: 'giorr.',
     translations: {
-      gaeilge: 'TERF',
-      gaidhligMhanainn: 'TERF',
-      beurla: 'TERF'
+      gaeilge: '',
+      gaidhligMhanainn: '',
+      beurla: 'TERF (Trans-Exclusionary Radical Feminist)'
     },
     createdAt: new Date('2024-03-15'),
     updatedAt: new Date('2024-03-15')
@@ -1372,9 +1372,9 @@ export const dictionaryData: DictionaryEntry[] = [
     definition: 'Neach LGDT+ a tha na Ghàidheal.',
     grammarNotes: 'fir. gin. Gèidheil, iol. Gèidheil',
     translations: {
-      gaeilge: 'Gaelach LADT+',
-      gaidhligMhanainn: 'Gaelagh LGDT+',
-      beurla: 'LGBTQ+ Gael'
+      gaeilge: 'Gaylgeoir / Gaeilgeoir aerach',
+      gaidhligMhanainn: 'Gaylgeyr / Gaelgeyr aeragh',
+      beurla: 'a gay Gael'
     },
     createdAt: new Date('2024-03-15'),
     updatedAt: new Date('2024-03-15')
