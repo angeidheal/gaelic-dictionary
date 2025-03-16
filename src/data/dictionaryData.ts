@@ -1,6 +1,6 @@
 import { DictionaryEntry } from '../types/DictionaryEntry';
 
-export const dictionaryData: DictionaryEntry[] = [{
+export const dictionaryData: DictionaryEntry[] = [
   {
     id: 'achd-aithneachadh-gne-2004',
     gaelic: 'Achd Aithneachadh Gnè (2004)',
@@ -46,8 +46,8 @@ export const dictionaryData: DictionaryEntry[] = [{
     definition: 'Facal a thathar a\' cleachdadh mar fhacal maslaichte airson daoine LGDT+, ach a tha cuid de dhaoine LGDT+ air ath-ghlacadh mar fhacal deimhinneach.',
     grammarNotes: 'bua. coi. aite',
     translations: {
-      gaeilge: 'aisteach',
-      gaidhligMhanainn: 'quaiyl',
+      gaeilge: 'aiteach',
+      gaidhligMhanainn: 'quaagh',
       beurla: 'queer'
     },
     createdAt: new Date('2024-03-15'),
@@ -1939,14 +1939,14 @@ export const dictionaryData: DictionaryEntry[] = [{
     updatedAt: new Date('2024-03-15')
   },
   {
-    id: 'sionndram-easbhaidh-ion-dhion-togte',
-    gaelic: 'Sionndram Easbhaidh Ion-dhìon Togte',
-    definition: 'Tinneas a tha a\' lagachadh siostam dìon-slàinte na bodhaige.',
-    grammarNotes: 'fir. gin. Sionndraim Easbhaidh Ion-dhìon Togte',
+    id: 'sionndram-easbhaidh-ion-dhion-daonna',
+    gaelic: 'Sionndram Easbhaidh Ion-dhìon Daonna',
+    definition: 'Bìoras a tha a\' lagachadh siostam dìon-slàinte na bodhaige.',
+    grammarNotes: 'fir. gin. Bìorais Easbhaidh Ion-dhìon Daonna',
     translations: {
-      gaeilge: 'Siondróm Easpa Imdhíonachta Faighte',
-      gaidhligMhanainn: 'Shingys Laccal Coadey Troggit',
-      beurla: 'Acquired Immunodeficiency Syndrome'
+      gaeilge: 'Víreas Easpa Imdhíonachta Daonna',
+      gaidhligMhanainn: 'Virus Laccal Coadey Deiney',
+      beurla: 'Human Immunodeficiency Virus'
     },
     createdAt: new Date('2024-03-15'),
     updatedAt: new Date('2024-03-15')
@@ -2328,4 +2328,4 @@ export const dictionaryData: DictionaryEntry[] = [{
     createdAt: new Date('2024-03-15'),
     updatedAt: new Date('2024-03-15')
   }
-].sort((a, b) => a.gaelic.localeCompare(b.gaelic, 'gd'));} 
+];
