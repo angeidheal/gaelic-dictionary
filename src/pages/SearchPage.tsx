@@ -90,6 +90,8 @@ const SearchPage: React.FC = () => {
               width: { xs: 80, sm: 100 },
               height: 'auto',
               mb: 1,
+              borderRadius: { xs: '10px', sm: '13px' },
+              WebkitBorderRadius: { xs: '10px', sm: '13px' },
             }}
           />
           <Typography 
