@@ -78,10 +78,12 @@ const BrowsePage: React.FC = () => {
             textAlign: 'center',
             fontSize: { xs: '1.75rem', sm: '2.125rem' },
             wordWrap: 'break-word',
+            fontFamily: '"Lemonada", cursive',
+            fontWeight: 700,
           }}
           id="page-heading"
         >
-          Brabhsaich na Faclan
+          Brabhsaich
         </Typography>
 
         <List 

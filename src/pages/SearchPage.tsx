@@ -79,7 +79,7 @@ const SearchPage: React.FC = () => {
         >
           <Box
             component="img"
-            src={`${process.env.PUBLIC_URL}/assets/logo.png`}
+            src="/faclair-nan-geidheal/assets/logo.png"
             alt=""
             onError={(e) => {
               console.error('Error loading logo:', e);
@@ -100,8 +100,8 @@ const SearchPage: React.FC = () => {
               textAlign: 'center',
               fontSize: { xs: '1.75rem', sm: '2.125rem' },
               wordWrap: 'break-word',
-              fontFamily: '"Lemonada", cursive',
-              fontWeight: 700,
+              fontFamily: '"Lemonada", cursive !important',
+              fontWeight: '700 !important',
               letterSpacing: '-0.5px',
             }}
           >
