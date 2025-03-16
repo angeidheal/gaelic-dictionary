@@ -63,7 +63,7 @@ const BrowsePage: React.FC = () => {
         {entries.map((entry) => (
           <ListItem key={entry.id} disablePadding>
             <ListItemButton
-              onClick={() => navigate(`/facal/${entry.id}`)}
+              onClick={() => navigate(`/facal/${entry.id}`, { state: { from: '/brabhsaich' } })}
               sx={{
                 borderRadius: 2,
                 mb: 1,

@@ -6,17 +6,18 @@ import ArrowBackIcon from '@mui/icons-material/ArrowBack';
 interface BackButtonProps {
   variant?: 'text' | 'contained' | 'outlined';
   sx?: object;
+  navigateTo?: string;
 }
 
-const BackButton: React.FC<BackButtonProps> = ({ variant = 'text', sx = {} }) => {
+const BackButton: React.FC<BackButtonProps> = ({ variant = 'text', sx = {}, navigateTo = '/' }) => {
   const navigate = useNavigate();
 
   return (
     <Button
       startIcon={<ArrowBackIcon />}
-      onClick={() => navigate('/')}
+      onClick={() => navigate(navigateTo)}
       variant={variant}
-      aria-label="Go back to home page"
+      aria-label={`Go back to ${navigateTo === '/' ? 'home' : 'previous'} page`}
       sx={{ mb: 2, ...sx }}
     >
       Till

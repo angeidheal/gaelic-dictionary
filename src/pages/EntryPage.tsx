@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { useParams, useNavigate } from 'react-router-dom';
+import { useParams, useNavigate, useLocation } from 'react-router-dom';
 import { Howl } from 'howler';
 import {
   Box,
@@ -18,12 +18,16 @@ import BackButton from '../components/BackButton';
 const EntryPage: React.FC = () => {
   const { id } = useParams<{ id: string }>();
   const navigate = useNavigate();
+  const location = useLocation();
   const [entry, setEntry] = useState<DictionaryEntry | null>(null);
   const [loading, setLoading] = useState(true);
   const [sound, setSound] = useState<Howl | null>(null);
   const [hasAudio, setHasAudio] = useState(false);
   const [isPlaying, setIsPlaying] = useState(false);
   const [audioError, setAudioError] = useState<string | null>(null);
+
+  // Get the previous path from the location state
+  const previousPath = location.state?.from || '/';
 
   useEffect(() => {
     const fetchEntry = async () => {
@@ -118,14 +122,14 @@ const EntryPage: React.FC = () => {
         <Typography variant="h5" gutterBottom>
           Cha deach am facal a lorg
         </Typography>
-        <BackButton variant="contained" sx={{ mb: 0 }} />
+        <BackButton variant="contained" sx={{ mb: 0 }} navigateTo={previousPath} />
       </Box>
     );
   }
 
   return (
     <Box>
-      <BackButton />
+      <BackButton navigateTo={previousPath} />
 
       <Paper elevation={3} sx={{ p: 4, borderRadius: 2 }}>
         <Box display="flex" alignItems="center" mb={3}>

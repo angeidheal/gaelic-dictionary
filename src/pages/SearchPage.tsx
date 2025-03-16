@@ -170,7 +170,7 @@ const SearchPage: React.FC = () => {
             results.map((entry) => (
               <ListItemButton
                 key={entry.id}
-                onClick={() => navigate(`/facal/${entry.id}`)}
+                onClick={() => navigate(`/facal/${entry.id}`, { state: { from: '/' } })}
                 sx={{
                   mb: 1,
                   borderRadius: 1,
