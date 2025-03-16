@@ -1,34 +1,27 @@
 import React, { useEffect, useState } from 'react';
-import { useParams, useNavigate, useLocation } from 'react-router-dom';
+import { useParams } from 'react-router-dom';
 import { Howl } from 'howler';
 import {
   Box,
   Typography,
   Paper,
-  Grid,
-  IconButton,
-  Divider,
-  CircularProgress,
   Link,
+  IconButton,
+  CircularProgress,
 } from '@mui/material';
 import VolumeUpIcon from '@mui/icons-material/VolumeUp';
 import { DictionaryEntry } from '../types/DictionaryEntry';
 import { getEntryById } from '../services/dictionaryService';
 import BackButton from '../components/BackButton';
 
-const EntryPage: React.FC = () => {
-  const { id } = useParams<{ id: string }>();
-  const navigate = useNavigate();
-  const location = useLocation();
+export const EntryPage = () => {
+  const { id } = useParams();
   const [entry, setEntry] = useState<DictionaryEntry | null>(null);
   const [loading, setLoading] = useState(true);
   const [sound, setSound] = useState<Howl | null>(null);
   const [hasAudio, setHasAudio] = useState(false);
   const [isPlaying, setIsPlaying] = useState(false);
   const [audioError, setAudioError] = useState<string | null>(null);
-
-  // Get the previous path from the location state
-  const previousPath = location.state?.from || '/';
 
   useEffect(() => {
     const fetchEntry = async () => {
@@ -123,7 +116,7 @@ const EntryPage: React.FC = () => {
         <Typography variant="h5" gutterBottom>
           Cha deach am facal a lorg
         </Typography>
-        <BackButton variant="contained" sx={{ mb: 0 }} navigateTo={previousPath} />
+        <BackButton variant="contained" sx={{ mb: 0 }} />
       </Box>
     );
   }
@@ -131,15 +124,26 @@ const EntryPage: React.FC = () => {
   return (
     <Box>
       <Paper elevation={3} sx={{ p: 4, borderRadius: 2, mb: 3 }}>
-        <Box display="flex" alignItems="center" mb={3}>
-          <Typography variant="h3" component="h1" sx={{ flexGrow: 1 }}>
+        <Box 
+          display="flex" 
+          alignItems="center" 
+          mb={3}
+          role="article"
+          aria-labelledby="word-heading"
+        >
+          <Typography 
+            variant="h3" 
+            component="h1" 
+            id="word-heading"
+            sx={{ flexGrow: 1 }}
+          >
             {entry.gaelic}
           </Typography>
           {hasAudio && (
             <IconButton
               onClick={handlePlayAudio}
               size="large"
-              aria-label={isPlaying ? "Stop audio" : "Play audio"}
+              aria-label={isPlaying ? "Sguir dhen fhuaim" : "Cluich am fuaim"}
               aria-pressed={isPlaying}
               role="button"
               sx={{ 
@@ -150,22 +154,27 @@ const EntryPage: React.FC = () => {
                 }
               }}
             >
-              <VolumeUpIcon />
+              <VolumeUpIcon aria-hidden="true" />
             </IconButton>
           )}
           {audioError && (
-            <Typography color="error" variant="caption" sx={{ ml: 1 }}>
+            <Typography 
+              color="error" 
+              variant="caption" 
+              sx={{ ml: 1 }}
+              role="alert"
+            >
               {audioError}
             </Typography>
           )}
         </Box>
 
-        <Typography variant="h6" gutterBottom>
+        <Typography variant="h6" gutterBottom id="translations-heading">
           Eadar-theangachaidhean
         </Typography>
-        <Box>
+        <Box role="region" aria-labelledby="translations-heading">
           <Box display="flex" alignItems="center" gap={2} mb={2}>
-            <Typography variant="subtitle1">🇮🇪</Typography>
+            <Typography variant="subtitle1" aria-label="Gaeilge">🇮🇪</Typography>
             {entry.translations.gaeilge ? (
               <Typography>{entry.translations.gaeilge}</Typography>
             ) : (
@@ -179,6 +188,7 @@ const EntryPage: React.FC = () => {
                     color: 'error.dark'
                   }
                 }}
+                aria-label="Chan eil eadar-theangachadh Gaeilge againn. Cuir moladh dhuinn."
               >
                 Chan eil eadar-theangachadh againn. Cuir moladh dhuinn.
               </Link>
@@ -186,7 +196,7 @@ const EntryPage: React.FC = () => {
           </Box>
 
           <Box display="flex" alignItems="center" gap={2} mb={2}>
-            <Typography variant="subtitle1">🇮🇲</Typography>
+            <Typography variant="subtitle1" aria-label="Gàidhlig Mhanainn">🇮🇲</Typography>
             {entry.translations.gaidhligMhanainn ? (
               <Typography>{entry.translations.gaidhligMhanainn}</Typography>
             ) : (
@@ -200,6 +210,7 @@ const EntryPage: React.FC = () => {
                     color: 'error.dark'
                   }
                 }}
+                aria-label="Chan eil eadar-theangachadh Gàidhlig Mhanainn againn. Cuir moladh dhuinn."
               >
                 Chan eil eadar-theangachadh againn. Cuir moladh dhuinn.
               </Link>
@@ -207,7 +218,7 @@ const EntryPage: React.FC = () => {
           </Box>
 
           <Box display="flex" alignItems="center" gap={2}>
-            <Typography variant="subtitle1">🏴󠁧󠁢󠁥󠁮󠁧󠁿</Typography>
+            <Typography variant="subtitle1" aria-label="Beurla">🏴󠁧󠁢󠁥󠁮󠁧󠁿</Typography>
             {entry.translations.beurla ? (
               <Typography>{entry.translations.beurla}</Typography>
             ) : (
@@ -221,6 +232,7 @@ const EntryPage: React.FC = () => {
                     color: 'error.dark'
                   }
                 }}
+                aria-label="Chan eil eadar-theangachadh Beurla againn. Cuir moladh dhuinn."
               >
                 Chan eil eadar-theangachadh againn. Cuir moladh dhuinn.
               </Link>
@@ -229,10 +241,8 @@ const EntryPage: React.FC = () => {
         </Box>
       </Paper>
       <Box display="flex" justifyContent="center">
-        <BackButton navigateTo={previousPath} />
+        <BackButton />
       </Box>
     </Box>
   );
-};
-
-export default EntryPage; 
+}; 

@@ -2,8 +2,8 @@ import React from 'react';
 import {
   Box,
   Typography,
+  Link,
   Paper,
-  Container,
 } from '@mui/material';
 
 const AboutPage: React.FC = () => {

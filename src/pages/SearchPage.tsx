@@ -14,6 +14,7 @@ import {
   Link,
 } from '@mui/material';
 import SearchIcon from '@mui/icons-material/Search';
+import ClearIcon from '@mui/icons-material/Clear';
 import ChevronRightIcon from '@mui/icons-material/ChevronRight';
 import { DictionaryEntry } from '../types/DictionaryEntry';
 import { searchDictionary } from '../services/dictionaryService';
@@ -22,7 +23,6 @@ const SearchPage: React.FC = () => {
   const [searchQuery, setSearchQuery] = useState('');
   const [results, setResults] = useState<DictionaryEntry[]>([]);
   const [loading, setLoading] = useState(false);
-  const [logoError, setLogoError] = useState(false);
   const navigate = useNavigate();
 
   const handleSearch = async (query: string) => {
@@ -42,6 +42,11 @@ const SearchPage: React.FC = () => {
     }
   };
 
+  const handleClear = () => {
+    setSearchQuery('');
+    setResults([]);
+  };
+
   // Update results when search query changes
   useEffect(() => {
     const debounceTimer = setTimeout(() => {
@@ -52,46 +57,51 @@ const SearchPage: React.FC = () => {
   }, [searchQuery]);
 
   return (
-    <>
-      <Box sx={{ 
-        display: 'flex', 
-        flexDirection: 'column', 
-        alignItems: 'center', 
-        mb: 4, 
-        gap: 1,
-        textAlign: 'center',
-        px: 2
-      }}>
-        {!logoError && (
-          <Box
-            component="img"
-            src={process.env.PUBLIC_URL + '/assets/logo.png'}
-            alt="Faclair nan Gèidheal Logo"
-            sx={{
-              height: { xs: 80, sm: 100, md: 120 },
-              width: 'auto',
-              borderRadius: '12px',
-              overflow: 'hidden',
-            }}
-            onError={() => setLogoError(true)}
-          />
-        )}
-        <Typography 
-          variant="h4" 
-          component="h1" 
+    <Box sx={{ maxWidth: 800, mx: 'auto', p: { xs: 2, sm: 3 } }}>
+      <Box 
+        sx={{ 
+          display: 'flex', 
+          flexDirection: 'column',
+          alignItems: 'center', 
+          mb: 4,
+          gap: 2,
+        }}
+      >
+        <Link 
+          href="/" 
           sx={{ 
-            fontWeight: 700,
-            fontFamily: '"Lemonada", cursive',
-            fontSize: { xs: '1.5rem', sm: '1.75rem', md: '2rem' },
-            textAlign: 'center',
-            whiteSpace: 'nowrap',
-            overflow: 'hidden',
-            textOverflow: 'ellipsis',
-            width: '100%'
+            textDecoration: 'none',
+            display: 'flex',
+            flexDirection: 'column',
+            alignItems: 'center',
+            gap: 1,
           }}
         >
-          Faclair nan Gèidheal
-        </Typography>
+          <Box
+            component="img"
+            src="/faclair-nan-geidheal/assets/logo.png"
+            alt=""
+            sx={{
+              width: { xs: 80, sm: 100 },
+              height: 'auto',
+              mb: 1,
+            }}
+          />
+          <Typography 
+            variant="h4" 
+            component="h1" 
+            sx={{ 
+              color: 'text.primary', 
+              textAlign: 'center',
+              fontSize: { xs: '1.75rem', sm: '2.125rem' },
+              wordWrap: 'break-word',
+              fontFamily: '"Lemonada", cursive',
+              fontWeight: 700,
+            }}
+          >
+            Faclair nan Gèidheal
+          </Typography>
+        </Link>
         <Typography 
           variant="subtitle1" 
           color="text.secondary"
@@ -99,10 +109,6 @@ const SearchPage: React.FC = () => {
             fontFamily: '"Lemonada", cursive',
             fontSize: { xs: '0.875rem', sm: '1rem' },
             textAlign: 'center',
-            whiteSpace: 'nowrap',
-            overflow: 'hidden',
-            textOverflow: 'ellipsis',
-            width: '100%'
           }}
         >
           leis{' '}
@@ -119,6 +125,10 @@ const SearchPage: React.FC = () => {
                 textDecoration: 'underline',
                 color: 'primary.dark',
               },
+              '&:focus': {
+                outline: '2px solid currentColor',
+                outlineOffset: '2px',
+              },
             }}
           >
             a' Ghèidheal Ùr
@@ -129,9 +139,12 @@ const SearchPage: React.FC = () => {
       <Paper
         elevation={3}
         sx={{
-          p: 3,
+          p: { xs: 2, sm: 3 },
           mb: 4,
           borderRadius: 2,
+          width: '100%',
+          maxWidth: '600px',
+          mx: 'auto',
         }}
       >
         <TextField
@@ -140,23 +153,64 @@ const SearchPage: React.FC = () => {
           placeholder="Cuir a-steach facal..."
           value={searchQuery}
           onChange={(e) => setSearchQuery(e.target.value)}
+          inputProps={{
+            'aria-label': 'Lorg facal',
+            'aria-expanded': searchQuery.length >= 2,
+            'aria-controls': 'search-results-list',
+            'aria-describedby': 'search-description',
+            style: { fontSize: '1rem' },
+          }}
+          sx={{
+            '& .MuiInputBase-root': {
+              fontSize: { xs: '1rem', sm: '1.1rem' },
+            },
+            '& .MuiInputLabel-root': {
+              fontSize: { xs: '1rem', sm: '1.1rem' },
+            },
+          }}
           InputProps={{
-            endAdornment: (
+            startAdornment: (
+              <InputAdornment position="start">
+                <SearchIcon 
+                  color="action" 
+                  aria-hidden="true"
+                  sx={{ fontSize: { xs: '1.25rem', sm: '1.5rem' } }}
+                />
+              </InputAdornment>
+            ),
+            endAdornment: searchQuery && (
               <InputAdornment position="end">
-                <IconButton
-                  edge="end"
-                  disabled={loading || searchQuery.length < 2}
-                >
-                  {loading ? <CircularProgress size={24} /> : <SearchIcon />}
-                </IconButton>
+                {loading ? (
+                  <CircularProgress size={20} aria-label="A' lorg..." />
+                ) : (
+                  <IconButton 
+                    onClick={handleClear} 
+                    edge="end" 
+                    aria-label="clear search"
+                    sx={{
+                      '&:focus': {
+                        outline: '2px solid currentColor',
+                        outlineOffset: '2px',
+                      },
+                    }}
+                  >
+                    <ClearIcon sx={{ fontSize: { xs: '1.25rem', sm: '1.5rem' } }} />
+                  </IconButton>
+                )}
               </InputAdornment>
             ),
           }}
         />
         <Typography 
+          id="search-description"
           variant="body2" 
           color="text.secondary" 
-          sx={{ mt: 1, textAlign: 'center' }}
+          sx={{ 
+            mt: 2,
+            textAlign: 'center',
+            fontSize: { xs: '0.875rem', sm: '1rem' },
+            lineHeight: 1.6,
+          }}
         >
           Lorg ann an Gàidhlig, Gaeilge, Gàidhlig Mhanainn no Beurla.
           <br />
@@ -165,7 +219,20 @@ const SearchPage: React.FC = () => {
       </Paper>
 
       {searchQuery.length >= 2 && (
-        <List>
+        <List
+          id="search-results-list"
+          role="region"
+          aria-label="Toraidhean"
+          aria-live="polite"
+          sx={{
+            width: '100%',
+            maxWidth: '600px',
+            mx: 'auto',
+            '& > *': {
+              breakInside: 'avoid',
+            },
+          }}
+        >
           {results.length > 0 ? (
             results.map((entry) => (
               <ListItemButton
@@ -186,26 +253,50 @@ const SearchPage: React.FC = () => {
                   '&:active': {
                     transform: 'translateX(2px)',
                   },
+                  '&:focus': {
+                    outline: '2px solid currentColor',
+                    outlineOffset: '2px',
+                  },
+                  '@media (max-width: 600px)': {
+                    px: 2,
+                    py: 1.5,
+                  },
                 }}
               >
                 <ListItemText
                   primary={entry.gaelic}
                   primaryTypographyProps={{
                     variant: 'h6',
-                    sx: { fontWeight: 500 },
+                    sx: { 
+                      fontWeight: 500,
+                      fontSize: { xs: '1rem', sm: '1.25rem' },
+                    },
                   }}
                 />
-                <ChevronRightIcon sx={{ color: 'text.secondary', opacity: 0.5 }} />
+                <ChevronRightIcon 
+                  sx={{ 
+                    color: 'text.secondary', 
+                    opacity: 0.5,
+                    fontSize: { xs: '1.25rem', sm: '1.5rem' },
+                  }} 
+                />
               </ListItemButton>
             ))
           ) : (
-            <Typography variant="body1" color="text.secondary" align="center" sx={{ py: 4 }}>
-              Cha ghabh na lorg thu a lorg. Feuch facal no cànan eile
+            <Typography 
+              variant="body1" 
+              color="text.secondary" 
+              sx={{ 
+                textAlign: 'center',
+                fontSize: { xs: '0.95rem', sm: '1rem' },
+              }}
+            >
+              Chan eil toradh ann
             </Typography>
           )}
         </List>
       )}
-    </>
+    </Box>
   );
 };
 

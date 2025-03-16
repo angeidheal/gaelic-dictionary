@@ -1,6 +1,6 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
-import { Button } from '@mui/material';
+import { Button, useTheme } from '@mui/material';
 import ArrowBackIcon from '@mui/icons-material/ArrowBack';
 
 interface BackButtonProps {
@@ -11,6 +11,7 @@ interface BackButtonProps {
 
 const BackButton: React.FC<BackButtonProps> = ({ variant = 'contained', sx = {}, navigateTo = '/' }) => {
   const navigate = useNavigate();
+  const theme = useTheme();
 
   return (
     <Button
@@ -21,10 +22,14 @@ const BackButton: React.FC<BackButtonProps> = ({ variant = 'contained', sx = {},
       sx={{ 
         mb: 2,
         fontWeight: 500,
-        backgroundColor: 'primary.main',
-        color: 'white',
+        backgroundColor: theme.palette.mode === 'dark' ? 'primary.main' : 'primary.main',
+        color: '#ffffff',
         '&:hover': {
-          backgroundColor: 'primary.dark',
+          backgroundColor: theme.palette.mode === 'dark' ? 'primary.dark' : 'primary.dark',
+        },
+        '&:focus': {
+          outline: '2px solid currentColor',
+          outlineOffset: '2px',
         },
         ...sx 
       }}
