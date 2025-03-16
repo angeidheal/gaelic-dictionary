@@ -79,8 +79,13 @@ const SearchPage: React.FC = () => {
         >
           <Box
             component="img"
-            src="/faclair-nan-geidheal/assets/logo.png"
+            src={`${process.env.PUBLIC_URL}/assets/logo.png`}
             alt=""
+            onError={(e) => {
+              console.error('Error loading logo:', e);
+              const img = e.target as HTMLImageElement;
+              console.log('Attempted logo URL:', img.src);
+            }}
             sx={{
               width: { xs: 80, sm: 100 },
               height: 'auto',
@@ -97,6 +102,7 @@ const SearchPage: React.FC = () => {
               wordWrap: 'break-word',
               fontFamily: '"Lemonada", cursive',
               fontWeight: 700,
+              letterSpacing: '-0.5px',
             }}
           >
             Faclair nan Gèidheal
