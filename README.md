@@ -1,18 +1,19 @@
 # Faclair nan Gèidheal
 
-A dictionary of Scottish Gaelic LGBTQIA+ voccabulary, with Irish, Manx and English translations.
+A dictionary of Scottish Gaelic LGBTQIA+ vocabulary, with Irish, Manx and English translations.
+
+Visit the dictionary at [faclair.lgbt](https://faclair.lgbt)
 
 ## Prerequisites
 
 - Node.js (v14 or higher)
-- MongoDB (v4.4 or higher)
 - npm or yarn
 
 ## Installation
 
 1. Clone the repository:
 ```bash
-git clone https://github.com/yourusername/faclair-nan-geidheal.git
+git clone https://github.com/angeidheal/faclair-nan-geidheal.git
 cd faclair-nan-geidheal
 ```
 
@@ -21,38 +22,47 @@ cd faclair-nan-geidheal
 npm install
 ```
 
-3. Set up environment variables:
-Create a `.env` file in the root directory with the following content:
-```
-MONGODB_URI=mongodb://localhost:27017/faclair-nan-geidheal
-PORT=3001
-```
+## Development
 
-## Running the Application
-
-1. Start MongoDB:
-```bash
-mongod
-```
-
-2. Start the development server:
-```bash
-npm run dev
-```
-
-This will start both the frontend (React) and backend (Express) servers concurrently:
-- Frontend: http://localhost:3000
-- Backend: http://localhost:3001
-
-## Building for Production
-
-To create a production build:
+To start the development server:
 
 ```bash
-npm run build
+npm start
 ```
 
-The build output will be in the `build` directory.
+This will start the React development server at http://localhost:3000
+
+## Deployment
+
+The site is deployed to GitHub Pages with a custom domain. To deploy new changes:
+
+```bash
+npm run deploy
+```
+
+This will:
+1. Build the project
+2. Deploy to the gh-pages branch
+3. Serve the site at [faclair.lgbt](https://faclair.lgbt)
+
+## Project Structure
+
+- `/src` - React source code
+  - `/components` - Reusable React components
+  - `/pages` - Page components
+  - `/services` - Data and API services
+  - `/types` - TypeScript type definitions
+- `/public` - Static assets and HTML template
+  - `CNAME` - Custom domain configuration
+  - `assets/` - Images and other static files
+
+## Technologies Used
+
+- React with TypeScript
+- Material-UI (MUI) for components and theming
+- React Router for navigation
+- Howler.js for audio playback
+- GitHub Pages for hosting
 
 ## Contributing
 
@@ -70,5 +80,5 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 
 - Material-UI for the component library
 - Howler.js for audio playback
-- MongoDB for the database
-- React and Express for the framework
+- React for the framework
+- GitHub Pages for hosting
