@@ -1,15 +1,15 @@
 import { DictionaryEntry } from '../types/DictionaryEntry';
 
-export const dictionaryData: DictionaryEntry[] = [
+export const dictionaryData: DictionaryEntry[] = [{
   {
     id: 'achd-aithneachadh-gne-2004',
     gaelic: 'Achd Aithneachadh Gnè (2004)',
     definition: 'Achd Pàrlamaid na Rìoghachd Aonaichte a tha a\' toirt cothrom do dhaoine tar-ghnèitheach aithneachadh laghail fhaighinn air an gnè aca.',
     grammarNotes: 'boir. gin. Achd Aithneachaidh Gnè',
     translations: {
-      gaeilge: 'An tAcht um Inscne a Aithint 2004',
-      gaidhligMhanainn: 'Slattys Goaill-rish Kynney 2004',
-      beurla: 'Gender Recognition Act 2004'
+      gaeilge: 'An tAcht um Inscne a Aithint (2004)',
+      gaidhligMhanainn: 'Slattys Goaill Rish Keintys (2004)',
+      beurla: 'Gender Recognition Act (2004)'
     },
     createdAt: new Date('2024-03-15'),
     updatedAt: new Date('2024-03-15')
@@ -2328,4 +2328,4 @@ export const dictionaryData: DictionaryEntry[] = [
     createdAt: new Date('2024-03-15'),
     updatedAt: new Date('2024-03-15')
   }
-]; 
+].sort((a, b) => a.gaelic.localeCompare(b.gaelic, 'gd'));} 
