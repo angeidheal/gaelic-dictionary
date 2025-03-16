@@ -29,14 +29,19 @@ const Layout: React.FC<LayoutProps> = ({ children, onThemeToggle, isDarkMode }) 
         href="#main-content"
         sx={{
           position: 'absolute',
-          top: -40,
-          left: 0,
-          backgroundColor: 'primary.main',
-          color: 'white',
-          padding: '8px',
+          top: -9999,
+          left: 50,
+          backgroundColor: (theme) => theme.palette.mode === 'dark' ? '#90caf9' : 'primary.main',
+          color: (theme) => theme.palette.mode === 'dark' ? '#000000' : '#ffffff',
+          padding: '8px 16px',
           zIndex: 9999,
+          textDecoration: 'none',
+          borderRadius: 1,
+          transition: 'top 0.2s ease-in-out',
           '&:focus': {
-            top: 0,
+            top: 8,
+            outline: '2px solid currentColor',
+            outlineOffset: '2px',
           },
         }}
       >

@@ -159,10 +159,10 @@ const BrowsePage: React.FC = () => {
             aria-label="Till gu mullach na duilleige"
             onClick={handleBackToTop}
             sx={{
-              bgcolor: 'primary.main',
-              color: 'white',
+              bgcolor: (theme) => theme.palette.mode === 'dark' ? '#90caf9' : 'primary.main',
+              color: (theme) => theme.palette.mode === 'dark' ? '#000000' : '#ffffff',
               '&:hover': {
-                bgcolor: 'primary.dark',
+                bgcolor: (theme) => theme.palette.mode === 'dark' ? '#a6d4fa' : 'primary.dark',
               },
               '@media (max-width: 600px)': {
                 bottom: 24,

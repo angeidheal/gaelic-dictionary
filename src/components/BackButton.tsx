@@ -22,10 +22,10 @@ const BackButton: React.FC<BackButtonProps> = ({ variant = 'contained', sx = {},
       sx={{ 
         mb: 2,
         fontWeight: 500,
-        backgroundColor: theme.palette.mode === 'dark' ? 'primary.main' : 'primary.main',
-        color: '#ffffff',
+        backgroundColor: theme.palette.mode === 'dark' ? '#90caf9' : 'primary.main',
+        color: theme.palette.mode === 'dark' ? '#000000' : '#ffffff',
         '&:hover': {
-          backgroundColor: theme.palette.mode === 'dark' ? 'primary.dark' : 'primary.dark',
+          backgroundColor: theme.palette.mode === 'dark' ? '#a6d4fa' : 'primary.dark',
         },
         '&:focus': {
           outline: '2px solid currentColor',
