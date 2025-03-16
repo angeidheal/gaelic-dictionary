@@ -67,84 +67,6 @@ export const dictionaryData: DictionaryEntry[] = [
     updatedAt: new Date('2024-03-15')
   },
   {
-    id: 'geidh',
-    gaelic: 'gèidh',
-    definition: 'Neach aig a bheil tàladh romansach no feiseil air daoine dhen aon ghnè.',
-    grammarNotes: 'bua.',
-    translations: {
-      gaeilge: 'aerach',
-      gaidhligMhanainn: 'aeragh',
-      beurla: 'gay'
-    },
-    createdAt: new Date('2024-03-15'),
-    updatedAt: new Date('2024-03-15')
-  },
-  {
-    id: 'gne',
-    gaelic: 'gnè',
-    definition: 'Dearbh-aithne pearsanta mar fhireannach, boireannach, no eile.',
-    grammarNotes: 'boir. gin. gnè, iol. gnèithean',
-    translations: {
-      gaeilge: 'inscne',
-      gaidhligMhanainn: 'kynney',
-      beurla: 'gender'
-    },
-    createdAt: new Date('2024-03-15'),
-    updatedAt: new Date('2024-03-15')
-  },
-  {
-    id: 'gne-neodhar',
-    gaelic: 'gnè-neodhar',
-    definition: 'Neach nach eil ga aithneachadh fhèin mar fhireannach no boireannach.',
-    grammarNotes: 'bua.',
-    translations: {
-      gaeilge: 'neodracht inscne',
-      gaidhligMhanainn: 'kynney-neutraagh',
-      beurla: 'gender neutral'
-    },
-    createdAt: new Date('2024-03-15'),
-    updatedAt: new Date('2024-03-15')
-  },
-  {
-    id: 'gne-shuidhichte',
-    gaelic: 'gnè-shuidhichte',
-    definition: 'An gnè a chaidh a bhuileachadh air neach nuair a rugadh iad.',
-    grammarNotes: 'boir. gin. gnè-shuidhichte',
-    translations: {
-      gaeilge: 'inscne breithe',
-      gaidhligMhanainn: 'kynney-ruggit',
-      beurla: 'assigned gender'
-    },
-    createdAt: new Date('2024-03-15'),
-    updatedAt: new Date('2024-03-15')
-  },
-  {
-    id: 'gneitheachd',
-    gaelic: 'gnèitheachd',
-    definition: 'Dearbh-aithne gnè neach.',
-    grammarNotes: 'boir. gin. gnèitheachd',
-    translations: {
-      gaeilge: 'inscneacht',
-      gaidhligMhanainn: 'kynneeaght',
-      beurla: 'gender identity'
-    },
-    createdAt: new Date('2024-03-15'),
-    updatedAt: new Date('2024-03-15')
-  },
-  {
-    id: 'leasbach',
-    gaelic: 'leasbach',
-    definition: 'Boireannach aig a bheil tàladh romansach no feiseil air boireannaich eile.',
-    grammarNotes: 'boir. gin. leasbaich, iol. leasbaich',
-    translations: {
-      gaeilge: 'leispiach',
-      gaidhligMhanainn: 'lesbiagh',
-      beurla: 'lesbian'
-    },
-    createdAt: new Date('2024-03-15'),
-    updatedAt: new Date('2024-03-15')
-  },
-  {
     id: 'an-deidh-obrach-lannsa',
     gaelic: 'an dèidh obrach-lannsa',
     definition: 'Neach tar-ghnèitheach a tha air obair-lannsa daingneachadh gnè fhaighinn.',
@@ -340,6 +262,19 @@ export const dictionaryData: DictionaryEntry[] = [
     updatedAt: new Date('2024-03-15')
   },
   {
+    id: 'brodag',
+    gaelic: 'brodag',
+    definition: 'Stuth ceimigeach a tha a\' toirt air a\' bhodhaig atharrachadh.',
+    grammarNotes: 'boir. gin. brodaig, iol. brodagan',
+    translations: {
+      gaeilge: 'hormón',
+      gaidhligMhanainn: 'broddag',
+      beurla: 'hormone'
+    },
+    createdAt: new Date('2024-03-15'),
+    updatedAt: new Date('2024-03-15')
+  },
+  {
     id: 'brodag-gne',
     gaelic: 'brodag-gnè',
     definition: 'Hòrmon a tha a\' toirt buaidh air feartan gnè.',
@@ -361,19 +296,6 @@ export const dictionaryData: DictionaryEntry[] = [
       gaeilge: 'téististéarón',
       gaidhligMhanainn: '',
       beurla: 'testosterone'
-    },
-    createdAt: new Date('2024-03-15'),
-    updatedAt: new Date('2024-03-15')
-  },
-  {
-    id: 'brodag',
-    gaelic: 'brodag',
-    definition: 'Stuth ceimigeach a tha a\' toirt air a\' bhodhaig atharrachadh.',
-    grammarNotes: 'boir. gin. brodaig, iol. brodagan',
-    translations: {
-      gaeilge: 'hormón',
-      gaidhligMhanainn: 'broddag',
-      beurla: 'hormone'
     },
     createdAt: new Date('2024-03-15'),
     updatedAt: new Date('2024-03-15')
@@ -613,19 +535,6 @@ export const dictionaryData: DictionaryEntry[] = [
     updatedAt: new Date('2024-03-15')
   },
   {
-    id: 'cueir-ghneitheach',
-    gaelic: 'cuèir-ghnèitheach',
-    definition: 'Neach aig a bheil dearbh-aithne gnè neo-bhìnearaidh.',
-    grammarNotes: 'bua. coi. -ich',
-    translations: {
-      gaeilge: '',
-      gaidhligMhanainn: '',
-      beurla: 'genderqueer'
-    },
-    createdAt: new Date('2024-03-15'),
-    updatedAt: new Date('2024-03-15')
-  },
-  {
     id: 'cueir',
     gaelic: 'cuèir',
     definition: 'Facal-sgàile airson daoine LGDT+ a chaidh ath-ghlacadh mar fhacal deimhinneach.',
@@ -634,6 +543,19 @@ export const dictionaryData: DictionaryEntry[] = [
       gaeilge: 'aiteach',
       gaidhligMhanainn: 'quaagh',
       beurla: 'queer'
+    },
+    createdAt: new Date('2024-03-15'),
+    updatedAt: new Date('2024-03-15')
+  },
+  {
+    id: 'cueir-ghneitheach',
+    gaelic: 'cuèir-ghnèitheach',
+    definition: 'Neach aig a bheil dearbh-aithne gnè neo-bhìnearaidh.',
+    grammarNotes: 'bua. coi. -ich',
+    translations: {
+      gaeilge: '',
+      gaidhligMhanainn: '',
+      beurla: 'genderqueer'
     },
     createdAt: new Date('2024-03-15'),
     updatedAt: new Date('2024-03-15')
@@ -730,6 +652,19 @@ export const dictionaryData: DictionaryEntry[] = [
     updatedAt: new Date('2024-03-15')
   },
   {
+    id: 'eadar-ghluasad',
+    gaelic: 'eadar-ghluasad',
+    definition: 'Nuair a tha cuideigin a\' gluasad bho aon ghnè gu gnè eile.',
+    grammarNotes: 'fir. gin. eadar-ghluasaid, iol. eadar-ghluasadan',
+    translations: {
+      gaeilge: 'trasdul',
+      gaidhligMhanainn: '',
+      beurla: 'transition'
+    },
+    createdAt: new Date('2024-03-15'),
+    updatedAt: new Date('2024-03-15')
+  },
+  {
     id: 'eadar-ghluasad-laghail',
     gaelic: 'eadar-ghluasad laghail',
     definition: 'Nuair a tha cuideigin a\' faighinn aithneachadh laghail air an gnè ùr aca.',
@@ -764,19 +699,6 @@ export const dictionaryData: DictionaryEntry[] = [
       gaeilge: 'trasdul shóisialta',
       gaidhligMhanainn: '',
       beurla: 'social transition'
-    },
-    createdAt: new Date('2024-03-15'),
-    updatedAt: new Date('2024-03-15')
-  },
-  {
-    id: 'eadar-ghluasad',
-    gaelic: 'eadar-ghluasad',
-    definition: 'Nuair a tha cuideigin a\' gluasad bho aon ghnè gu gnè eile.',
-    grammarNotes: 'fir. gin. eadar-ghluasaid, iol. eadar-ghluasadan',
-    translations: {
-      gaeilge: 'trasdul',
-      gaidhligMhanainn: '',
-      beurla: 'transition'
     },
     createdAt: new Date('2024-03-15'),
     updatedAt: new Date('2024-03-15')
@@ -1003,6 +925,175 @@ export const dictionaryData: DictionaryEntry[] = [
     updatedAt: new Date('2024-03-15')
   },
   {
+    id: 'geidh',
+    gaelic: 'gèidh',
+    definition: 'Neach aig a bheil tàladh romansach no feiseil air daoine dhen aon ghnè.',
+    grammarNotes: 'bua.',
+    translations: {
+      gaeilge: 'aerach',
+      gaidhligMhanainn: 'aeragh',
+      beurla: 'gay'
+    },
+    createdAt: new Date('2024-03-15'),
+    updatedAt: new Date('2024-03-15')
+  },
+  {
+    id: 'geidheal',
+    gaelic: 'Gèidheal',
+    definition: 'Neach LGDT+ a tha na Ghàidheal.',
+    grammarNotes: 'fir. gin. Gèidheil, iol. Gèidheil',
+    translations: {
+      gaeilge: 'Gaylgeoir / Gaeilgeoir aerach',
+      gaidhligMhanainn: 'Gaylgeyr / Gaelgeyr aeragh',
+      beurla: 'a gay Gael'
+    },
+    createdAt: new Date('2024-03-15'),
+    updatedAt: new Date('2024-03-15')
+  },
+  {
+    id: 'gne',
+    gaelic: 'gnè',
+    definition: 'Dearbh-aithne pearsanta mar fhireannach, boireannach, no eile.',
+    grammarNotes: 'boir. gin. gnè, iol. gnèithean',
+    translations: {
+      gaeilge: 'inscne',
+      gaidhligMhanainn: 'kynney',
+      beurla: 'gender'
+    },
+    createdAt: new Date('2024-03-15'),
+    updatedAt: new Date('2024-03-15')
+  },
+  {
+    id: 'gne-chriotaigeach',
+    gaelic: 'gnè-chriotaigeach',
+    definition: 'A\' buntainn ri gnè a tha fo sgrùdadh breithneachail.',
+    grammarNotes: 'bua.',
+    translations: {
+      gaeilge: '',
+      gaidhligMhanainn: ' ',
+      beurla: 'gender-critical'
+    },
+    createdAt: new Date('2024-03-15'),
+    updatedAt: new Date('2024-03-15')
+  },
+  {
+    id: 'gne-normadach',
+    gaelic: 'gnè-nòrmadach',
+    definition: 'A\' buntainn ri gnè a tha a\' leantainn nòrman sòisealta.',
+    grammarNotes: 'bua.',
+    translations: {
+      gaeilge: 'gnáthach ó thaobh na hinscne de',
+      gaidhligMhanainn: '',
+      beurla: 'gender-normative'
+    },
+    createdAt: new Date('2024-03-15'),
+    updatedAt: new Date('2024-03-15')
+  },
+  {
+    id: 'gne-normadachd',
+    gaelic: 'gnè-nòrmadachd',
+    definition: 'An smuain gu bheil e àbhaisteach a bhith a\' leantainn nòrman sòisealta a thaobh gnè.',
+    grammarNotes: 'boir. gin. gnè-nòrmadachd',
+    translations: {
+      gaeilge: 'normatacht inscne',
+      gaidhligMhanainn: '',
+      beurla: 'gender-normativity'
+    },
+    createdAt: new Date('2024-03-15'),
+    updatedAt: new Date('2024-03-15')
+  },
+  {
+    id: 'gne-shubailte',
+    gaelic: 'gnè-shùbailte',
+    definition: 'A\' buntainn ri gnè a dh\'fhaodas atharrachadh thar ùine.',
+    grammarNotes: 'bua.',
+    translations: {
+      gaeilge: 'inscne-sholúbtha',
+      gaidhligMhanainn: '',
+      beurla: 'gender-fluid'
+    },
+    createdAt: new Date('2024-03-15'),
+    updatedAt: new Date('2024-03-15')
+  },
+  {
+    id: 'gne-shuidhichte',
+    gaelic: 'gnè-shuidhichte',
+    definition: 'An gnè a chaidh a bhuileachadh air neach nuair a rugadh iad.',
+    grammarNotes: 'boir. gin. gnè-shuidhichte',
+    translations: {
+      gaeilge: '',
+      gaidhligMhanainn: '',
+      beurla: 'assigned gender'
+    },
+    createdAt: new Date('2024-03-15'),
+    updatedAt: new Date('2024-03-15')
+  },
+  {
+    id: 'gneitheachas-eile-sheorsach',
+    gaelic: 'gnèitheachas eile-sheòrsach',
+    definition: 'An smuain gu bheil e nàdarra a bhith eile-sheòrsach agus mì-nàdarra a bhith co-sheòrsach.',
+    grammarNotes: 'fir. gin. gnèitheachais eile-sheòrsaich',
+    translations: {
+      gaeilge: 'heitrighnéasachas',
+      gaidhligMhanainn: '',
+      beurla: 'heterosexism'
+    },
+    createdAt: new Date('2024-03-15'),
+    updatedAt: new Date('2024-03-15')
+  },
+  {
+    id: 'gonad',
+    gaelic: 'gònad',
+    definition: 'Organ a tha a\' dèanamh gametean agus hòrmonan gnè.',
+    grammarNotes: 'boir. gin. gònaid, iol. gònadan',
+    translations: {
+      gaeilge: 'gónad',
+      gaidhligMhanainn: 'gonad',
+      beurla: 'gonad'
+    },
+    createdAt: new Date('2024-03-15'),
+    updatedAt: new Date('2024-03-15')
+  },
+  {
+    id: 'grain-cho-sheorsachd',
+    gaelic: 'gràin co-sheòrsachd',
+    definition: 'Claon-bhreith an aghaidh dhaoine co-sheòrsach.',
+    grammarNotes: 'boir. gin. gràin co-sheòrsachd',
+    translations: {
+      gaeilge: 'homafóibe',
+      gaidhligMhanainn: '',
+      beurla: 'homophobia'
+    },
+    createdAt: new Date('2024-03-15'),
+    updatedAt: new Date('2024-03-15')
+  },
+  {
+    id: 'grain-dha-sheorsachd',
+    gaelic: 'gràin dà-sheòrsachd',
+    definition: 'Claon-bhreith an aghaidh dhaoine dà-sheòrsach.',
+    grammarNotes: 'boir. gin. gràin dà-sheòrsachd',
+    translations: {
+      gaeilge: 'défhóibe',
+      gaidhligMhanainn: '',
+      beurla: 'biphobia'
+    },
+    createdAt: new Date('2024-03-15'),
+    updatedAt: new Date('2024-03-15')
+  },
+  {
+    id: 'gun-obair-lannsa',
+    gaelic: 'gun obair-lannsa',
+    definition: 'Neach tar-ghnèitheach nach eil air obair-lannsa daingneachadh gnè fhaighinn.',
+    grammarNotes: 'gnàthas',
+    translations: {
+      gaeilge: 'gan obráid',
+      gaidhligMhanainn: 'gyn obbraghey',
+      beurla: 'non-op'
+    },
+    createdAt: new Date('2024-03-15'),
+    updatedAt: new Date('2024-03-15')
+  },
+  {
     id: 'hiv',
     gaelic: 'HIV',
     definition: 'Bìoras Easbhaidh Ion-dhìon Daonna',
@@ -1042,6 +1133,45 @@ export const dictionaryData: DictionaryEntry[] = [
     updatedAt: new Date('2024-03-15')
   },
   {
+    id: 'ioma-leannanach',
+    gaelic: 'ioma-leannanach',
+    definition: 'Neach aig a bheil dàimh romansach le barrachd air aon neach aig an aon àm.',
+    grammarNotes: 'bua. coi. -aiche',
+    translations: {
+      gaeilge: 'il-leannánach',
+      gaidhligMhanainn: 'ymmodee-ghraihagh',
+      beurla: 'polyamorous'
+    },
+    createdAt: new Date('2024-03-15'),
+    updatedAt: new Date('2024-03-15')
+  },
+  {
+    id: 'ioma-leannanachd',
+    gaelic: 'ioma-leannanachd',
+    definition: 'A\' bhith ann an dàimh romansach le barrachd air aon neach aig an aon àm.',
+    grammarNotes: 'boir. gin. ioma-leannanachd',
+    translations: {
+      gaeilge: 'il-leannánacht',
+      gaidhligMhanainn: 'ymmodee-ghraih',
+      beurla: 'polyamory'
+    },
+    createdAt: new Date('2024-03-15'),
+    updatedAt: new Date('2024-03-15')
+  },
+  {
+    id: 'ioma-sheorsach',
+    gaelic: 'ioma-sheòrsach',
+    definition: 'Neach aig a bheil tàladh romansach no feiseil air daoine de dhiofar ghnèithean.',
+    grammarNotes: 'bua. coi. -aiche',
+    translations: {
+      gaeilge: 'ilghnéasach',
+      gaidhligMhanainn: 'ymmodee-heltynagh',
+      beurla: 'polysexual'
+    },
+    createdAt: new Date('2024-03-15'),
+    updatedAt: new Date('2024-03-15')
+  },
+  {
     id: 'ion-dhion',
     gaelic: 'ion-dhìon',
     definition: 'Siostam a\' bhodhaig a tha a\' dìon an neach bho thinneasan.',
@@ -1055,365 +1185,66 @@ export const dictionaryData: DictionaryEntry[] = [
     updatedAt: new Date('2024-03-15')
   },
   {
-    id: 'lgdt',
-    gaelic: 'LGDT+',
-    definition: 'Leasbach, Gèidh, Dà-sheòrsach, agus Tar-ghnèitheach',
-    grammarNotes: 'giorr.',
+    id: 'ire-nan-anti-corp',
+    gaelic: 'ìre nan anti-corp',
+    definition: 'An uiread de dh\'anti-cuirp a tha san fhuil.',
+    grammarNotes: 'boir. gin. ìre nan anti-corp',
     translations: {
-      gaeilge: 'LADT+',
-      gaidhligMhanainn: 'LGDT+',
-      beurla: 'LGBT+'
+      gaeilge: 'leibhéal antasubstaintí',
+      gaidhligMhanainn: 'corrym ancorp',
+      beurla: 'antibody level'
     },
     createdAt: new Date('2024-03-15'),
     updatedAt: new Date('2024-03-15')
   },
   {
-    id: 'mi-ghneitheach',
-    gaelic: 'mì-ghnèitheach',
-    definition: 'Neach nach eil ag aithneachadh gnè sam bith.',
-    grammarNotes: 'bua. coi. -ich',
+    id: 'leasbach',
+    gaelic: 'leasbach',
+    definition: 'Boireannach aig a bheil tàladh romansach no feiseil air boireannaich eile.',
+    grammarNotes: 'boir. gin. leasbaich, iol. leasbaich',
     translations: {
-      gaeilge: 'neamh-inscneach',
-      gaidhligMhanainn: 'neukynney',
-      beurla: 'agender'
+      gaeilge: 'leispiach',
+      gaidhligMhanainn: 'lesbiagh',
+      beurla: 'lesbian'
     },
     createdAt: new Date('2024-03-15'),
     updatedAt: new Date('2024-03-15')
   },
   {
-    id: 'neo-bhinearan',
-    gaelic: 'neo-bhinearan',
-    definition: 'Neach nach eil ag aithneachadh gnè fireann no boireann.',
-    grammarNotes: 'bua.',
+    id: 'leasbachd',
+    gaelic: 'leasbachd',
+    definition: 'A\' bhith nad leasbach.',
+    grammarNotes: 'boir. gin. leasbachd',
     translations: {
-      gaeilge: 'neamh-dhénártha',
-      gaidhligMhanainn: 'neu-lhiantagh',
-      beurla: 'non-binary'
+      gaeilge: 'leispiacht',
+      gaidhligMhanainn: 'lesbiaghtys',
+      beurla: 'lesbianism'
     },
     createdAt: new Date('2024-03-15'),
     updatedAt: new Date('2024-03-15')
   },
   {
-    id: 'neo-ghneitheach',
-    gaelic: 'neo-ghnèitheach',
-    definition: 'Neach aig nach eil dearbh-aithne gnè.',
-    grammarNotes: 'bua. coi. -ich',
+    id: 'leigheas-ro-chasgach-iar-ghabhalach',
+    gaelic: 'leigheas ro-chasgach iar-ghabhalach',
+    definition: 'Leigheas a thèid a thoirt do neach às dèidh dhaibh a bhith an cunnart HIV.',
+    grammarNotes: 'fir. gin. leighis ro-chasgaich iar-ghabhalaich',
     translations: {
-      gaeilge: 'neamh-inscneach',
-      gaidhligMhanainn: 'neu-kynnagh',
-      beurla: 'agender'
+      gaeilge: 'próifiolacsas iarshuí',
+      gaidhligMhanainn: 'lheihys roie-lhiettal lurg-ghoaill',
+      beurla: 'Post-Exposure Prophylaxis'
     },
     createdAt: new Date('2024-03-15'),
     updatedAt: new Date('2024-03-15')
   },
   {
-    id: 'neo-ghneitheas',
-    gaelic: 'neo-ghnèitheas',
-    definition: 'A\' bhith nad neach neo-ghnèitheach.',
-    grammarNotes: 'fir. gin. neo-ghnèitheis',
+    id: 'leigheas-ro-chasgach-ro-ghabhalach',
+    gaelic: 'leigheas ro-chasgach ro-ghabhalach',
+    definition: 'Leigheas a thèid a thoirt do neach mus bi iad ann an cunnart HIV.',
+    grammarNotes: 'fir. gin. leighis ro-chasgaich ro-ghabhalaich',
     translations: {
-      gaeilge: 'neamh-inscneacht',
-      gaidhligMhanainn: 'neu-kynnid',
-      beurla: 'agenderism'
-    },
-    createdAt: new Date('2024-03-15'),
-    updatedAt: new Date('2024-03-15')
-  },
-  {
-    id: 'neo-romansach',
-    gaelic: 'neo-romansach',
-    definition: 'Neach aig nach eil tàladh romansach air daoine.',
-    grammarNotes: 'bua. coi. -aiche',
-    translations: {
-      gaeilge: 'neamh-rómánsach',
-      gaidhligMhanainn: 'neu-graihagh',
-      beurla: 'aromantic'
-    },
-    createdAt: new Date('2024-03-15'),
-    updatedAt: new Date('2024-03-15')
-  },
-  {
-    id: 'neo-romansachd',
-    gaelic: 'neo-romansachd',
-    definition: 'A\' bhith nad neach neo-romansach.',
-    grammarNotes: 'boir. gin. neo-romansachd',
-    translations: {
-      gaeilge: 'neamh-rómánsacht',
-      gaidhligMhanainn: 'neu-graihys',
-      beurla: 'aromanticism'
-    },
-    createdAt: new Date('2024-03-15'),
-    updatedAt: new Date('2024-03-15')
-  },
-  {
-    id: 'neo-sheorsach',
-    gaelic: 'neo-sheòrsach',
-    definition: 'Neach aig nach eil tàladh feiseil air daoine.',
-    grammarNotes: 'bua. coi. -aiche',
-    translations: {
-      gaeilge: 'éighnéasach',
-      gaidhligMhanainn: 'neu-heltynagh',
-      beurla: 'asexual'
-    },
-    createdAt: new Date('2024-03-15'),
-    updatedAt: new Date('2024-03-15')
-  },
-  {
-    id: 'neo-sheorsachd',
-    gaelic: 'neo-sheòrsachd',
-    definition: 'A\' bhith nad neach neo-sheòrsach.',
-    grammarNotes: 'boir. gin. neo-sheòrsachd',
-    translations: {
-      gaeilge: 'éighnéasacht',
-      gaidhligMhanainn: 'neu-heltynys',
-      beurla: 'asexuality'
-    },
-    createdAt: new Date('2024-03-15'),
-    updatedAt: new Date('2024-03-15')
-  },
-  {
-    id: 'obair-lannsa-ath-bhuileachadh-gne',
-    gaelic: 'obair-lannsa ath-bhuileachadh gnè',
-    definition: 'Obair-lannsa gus gnè neach atharrachadh.',
-    grammarNotes: 'boir. gin. obrach-lannsa ath-bhuileachadh gnè',
-    translations: {
-      gaeilge: 'máinliacht athshannadh inscne',
-      gaidhligMhanainn: 'obbraghey-lheihys aa-hoiaghey kynney',
-      beurla: 'gender reassignment surgery'
-    },
-    createdAt: new Date('2024-03-15'),
-    updatedAt: new Date('2024-03-15')
-  },
-  {
-    id: 'prois',
-    gaelic: 'pròis',
-    definition: 'Faireachdainn de dh\'fhèin-spèis agus misneachd mu do dhearbh-aithne LGDT+.',
-    grammarNotes: 'boir. gin. pròise',
-    translations: {
-      gaeilge: 'bród',
-      gaidhligMhanainn: 'moyrn',
-      beurla: 'pride'
-    },
-    createdAt: new Date('2024-03-15'),
-    updatedAt: new Date('2024-03-15')
-  },
-  {
-    id: 'righ-draga',
-    gaelic: 'rìgh draga',
-    definition: 'Boireannach no neach neo-bhinearan a tha a\' cur orra coltas fireannach mar phàirt de thaisbeanadh ealain.',
-    grammarNotes: 'fir. gin. rìgh draga, iol. rìghrean draga',
-    translations: {
-      gaeilge: 'rí draig',
-      gaidhligMhanainn: 'ree tayrn',
-      beurla: 'drag king'
-    },
-    createdAt: new Date('2024-03-15'),
-    updatedAt: new Date('2024-03-15')
-  },
-  {
-    id: 'tar-bhoireannach',
-    gaelic: 'tar-bhoireannach',
-    definition: 'Boireannach tar-ghnèitheach.',
-    grammarNotes: 'boir. gin. tar-bhoireannaich, iol. tar-bhoireannaich',
-    translations: {
-      gaeilge: 'bean tras',
-      gaidhligMhanainn: 'ben harr',
-      beurla: 'trans woman'
-    },
-    createdAt: new Date('2024-03-15'),
-    updatedAt: new Date('2024-03-15')
-  },
-  {
-    id: 'tar-fhireannach',
-    gaelic: 'tar-fhireannach',
-    definition: 'Fireannach tar-ghnèitheach.',
-    grammarNotes: 'fir. gin. tar-fhireannaich, iol. tar-fhireannaich',
-    translations: {
-      gaeilge: 'fear tras',
-      gaidhligMhanainn: 'dooinney harr',
-      beurla: 'trans man'
-    },
-    createdAt: new Date('2024-03-15'),
-    updatedAt: new Date('2024-03-15')
-  },
-  {
-    id: 'tar-ghneitheach',
-    gaelic: 'tar-ghnèitheach',
-    definition: 'Neach aig a bheil dearbh-aithne gnè eadar-dhealaichte bhon ghnè a chaidh a bhuileachadh orra nuair a rugadh iad.',
-    grammarNotes: 'bua.',
-    translations: {
-      gaeilge: 'trasinscneach',
-      gaidhligMhanainn: 'tar-kynnagh',
-      beurla: 'transgender'
-    },
-    createdAt: new Date('2024-03-15'),
-    updatedAt: new Date('2024-03-15')
-  },
-  {
-    id: 'tar-ghneitheas',
-    gaelic: 'tar-ghnèitheas',
-    definition: 'A\' bhith nad neach tar-ghnèitheach.',
-    grammarNotes: 'fir. gin. tar-ghnèitheis',
-    translations: {
-      gaeilge: 'trasinscneacht',
-      gaidhligMhanainn: 'tar-kynnid',
-      beurla: 'transgenderism'
-    },
-    createdAt: new Date('2024-03-15'),
-    updatedAt: new Date('2024-03-15')
-  },
-  {
-    id: 'tar-ghneitheachadh',
-    gaelic: 'tar-ghnèitheachadh',
-    definition: 'A\' bhith a\' dol tro phròiseas gus gnè atharrachadh.',
-    grammarNotes: 'fir. gin. tar-ghnèitheachaidh',
-    translations: {
-      gaeilge: 'trasdúil',
-      gaidhligMhanainn: 'tar-kynnaghtyn',
-      beurla: 'transitioning'
-    },
-    createdAt: new Date('2024-03-15'),
-    updatedAt: new Date('2024-03-15')
-  },
-  {
-    id: 'tar-ghneitheachd',
-    gaelic: 'tar-ghnèitheachd',
-    definition: 'A\' bhith nad neach tar-ghnèitheach.',
-    grammarNotes: 'boir. gin. tar-ghnèitheachd',
-    translations: {
-      gaeilge: 'trasinscneacht',
-      gaidhligMhanainn: 'tar-kynnys',
-      beurla: 'transgenderism'
-    },
-    createdAt: new Date('2024-03-15'),
-    updatedAt: new Date('2024-03-15')
-  },
-  {
-    id: 'gne-shubailte',
-    gaelic: 'gnè-shùbailte',
-    definition: 'A\' buntainn ri gnè a dh\'fhaodas atharrachadh thar ùine.',
-    grammarNotes: 'bua.',
-    translations: {
-      gaeilge: 'inscne-sholúbtha',
-      gaidhligMhanainn: 'kynney-lhiggey',
-      beurla: 'gender-fluid'
-    },
-    createdAt: new Date('2024-03-15'),
-    updatedAt: new Date('2024-03-15')
-  },
-  {
-    id: 'gneitheachas-eile-sheorsach',
-    gaelic: 'gnèitheachas eile-sheòrsach',
-    definition: 'An smuain gu bheil e nàdarra a bhith eile-sheòrsach agus mì-nàdarra a bhith co-sheòrsach.',
-    grammarNotes: 'fir. gin. gnèitheachais eile-sheòrsaich',
-    translations: {
-      gaeilge: 'heitreanormatacht',
-      gaidhligMhanainn: 'streightys',
-      beurla: 'heteronormativity'
-    },
-    createdAt: new Date('2024-03-15'),
-    updatedAt: new Date('2024-03-15')
-  },
-  {
-    id: 'gonad',
-    gaelic: 'gònad',
-    definition: 'Organ a tha a\' dèanamh gametean agus hòrmonan gnè.',
-    grammarNotes: 'boir. gin. gònaid, iol. gònadan',
-    translations: {
-      gaeilge: 'gónad',
-      gaidhligMhanainn: 'gonad',
-      beurla: 'gonad'
-    },
-    createdAt: new Date('2024-03-15'),
-    updatedAt: new Date('2024-03-15')
-  },
-  {
-    id: 'grain-cho-sheorsachd',
-    gaelic: 'gràin co-sheòrsachd',
-    definition: 'Claon-bhreith an aghaidh dhaoine co-sheòrsach.',
-    grammarNotes: 'boir. gin. gràin co-sheòrsachd',
-    translations: {
-      gaeilge: 'homafóibe',
-      gaidhligMhanainn: 'dwoaie co-heltynys',
-      beurla: 'homophobia'
-    },
-    createdAt: new Date('2024-03-15'),
-    updatedAt: new Date('2024-03-15')
-  },
-  {
-    id: 'grain-dha-sheorsachd',
-    gaelic: 'gràin dà-sheòrsachd',
-    definition: 'Claon-bhreith an aghaidh dhaoine dà-sheòrsach.',
-    grammarNotes: 'boir. gin. gràin dà-sheòrsachd',
-    translations: {
-      gaeilge: 'défhóibe',
-      gaidhligMhanainn: 'dwoaie daa-heltynys',
-      beurla: 'biphobia'
-    },
-    createdAt: new Date('2024-03-15'),
-    updatedAt: new Date('2024-03-15')
-  },
-  {
-    id: 'gun-obair-lannsa',
-    gaelic: 'gun obair-lannsa',
-    definition: 'Neach tar-ghnèitheach nach eil air obair-lannsa daingneachadh gnè fhaighinn.',
-    grammarNotes: 'gnàthas',
-    translations: {
-      gaeilge: 'gan obráid',
-      gaidhligMhanainn: 'gyn obbraghey',
-      beurla: 'non-op'
-    },
-    createdAt: new Date('2024-03-15'),
-    updatedAt: new Date('2024-03-15')
-  },
-  {
-    id: 'geidheal',
-    gaelic: 'Gèidheal',
-    definition: 'Neach LGDT+ a tha na Ghàidheal.',
-    grammarNotes: 'fir. gin. Gèidheil, iol. Gèidheil',
-    translations: {
-      gaeilge: 'Gaylgeoir / Gaeilgeoir aerach',
-      gaidhligMhanainn: 'Gaylgeyr / Gaelgeyr aeragh',
-      beurla: 'a gay Gael'
-    },
-    createdAt: new Date('2024-03-15'),
-    updatedAt: new Date('2024-03-15')
-  },
-  {
-    id: 'gne-chriotaigeach',
-    gaelic: 'gnè-chriotaigeach',
-    definition: 'A\' buntainn ri gnè a tha fo sgrùdadh breithneachail.',
-    grammarNotes: 'bua.',
-    translations: {
-      gaeilge: 'inscne-chriticiúil',
-      gaidhligMhanainn: 'kynney-ronsee',
-      beurla: 'gender-critical'
-    },
-    createdAt: new Date('2024-03-15'),
-    updatedAt: new Date('2024-03-15')
-  },
-  {
-    id: 'gne-normadach',
-    gaelic: 'gnè-nòrmadach',
-    definition: 'A\' buntainn ri gnè a tha a\' leantainn nòrman sòisealta.',
-    grammarNotes: 'bua.',
-    translations: {
-      gaeilge: 'inscne-normatach',
-      gaidhligMhanainn: 'kynney-cadjin',
-      beurla: 'gender-normative'
-    },
-    createdAt: new Date('2024-03-15'),
-    updatedAt: new Date('2024-03-15')
-  },
-  {
-    id: 'gne-normadachd',
-    gaelic: 'gnè-nòrmadachd',
-    definition: 'An smuain gu bheil e àbhaisteach a bhith a\' leantainn nòrman sòisealta a thaobh gnè.',
-    grammarNotes: 'boir. gin. gnè-nòrmadachd',
-    translations: {
-      gaeilge: 'inscne-normatacht',
-      gaidhligMhanainn: 'kynney-cadjinys',
-      beurla: 'gender-normativity'
+      gaeilge: 'próifiolacsas réamhshuí',
+      gaidhligMhanainn: 'lheihys roie-lhiettal roish-ghoaill',
+      beurla: 'Pre-Exposure Prophylaxis'
     },
     createdAt: new Date('2024-03-15'),
     updatedAt: new Date('2024-03-15')
@@ -1484,6 +1315,19 @@ export const dictionaryData: DictionaryEntry[] = [
     updatedAt: new Date('2024-03-15')
   },
   {
+    id: 'lgdt',
+    gaelic: 'LGDT+',
+    definition: 'Leasbach, Gèidh, Dà-sheòrsach, agus Tar-ghnèitheach',
+    grammarNotes: 'giorr.',
+    translations: {
+      gaeilge: 'LADT+',
+      gaidhligMhanainn: 'LGDT+',
+      beurla: 'LGBT+'
+    },
+    createdAt: new Date('2024-03-15'),
+    updatedAt: new Date('2024-03-15')
+  },
+  {
     id: 'lgdtc',
     gaelic: 'LGDTC+',
     definition: 'Leasbach, Gèidh, Dà-sheòrsach, Tar-ghnèitheach agus Cuèir',
@@ -1544,6 +1388,19 @@ export const dictionaryData: DictionaryEntry[] = [
       gaeilge: 'máthair ionaid',
       gaidhligMhanainn: 'moir ynnydagh',
       beurla: 'surrogate mother'
+    },
+    createdAt: new Date('2024-03-15'),
+    updatedAt: new Date('2024-03-15')
+  },
+  {
+    id: 'mi-ghneitheach',
+    gaelic: 'mì-ghnèitheach',
+    definition: 'Neach nach eil ag aithneachadh gnè sam bith.',
+    grammarNotes: 'bua. coi. -ich',
+    translations: {
+      gaeilge: 'neamh-inscneach',
+      gaidhligMhanainn: 'neukynney',
+      beurla: 'agender'
     },
     createdAt: new Date('2024-03-15'),
     updatedAt: new Date('2024-03-15')
@@ -1653,6 +1510,45 @@ export const dictionaryData: DictionaryEntry[] = [
     updatedAt: new Date('2024-03-15')
   },
   {
+    id: 'neo-bhinearan',
+    gaelic: 'neo-bhinearan',
+    definition: 'Neach nach eil ag aithneachadh gnè fireann no boireann.',
+    grammarNotes: 'bua.',
+    translations: {
+      gaeilge: 'neamh-dhénártha',
+      gaidhligMhanainn: 'neu-lhiantagh',
+      beurla: 'non-binary'
+    },
+    createdAt: new Date('2024-03-15'),
+    updatedAt: new Date('2024-03-15')
+  },
+  {
+    id: 'neo-ghneitheach',
+    gaelic: 'neo-ghnèitheach',
+    definition: 'Neach aig nach eil dearbh-aithne gnè.',
+    grammarNotes: 'bua. coi. -ich',
+    translations: {
+      gaeilge: 'neamh-inscneach',
+      gaidhligMhanainn: 'neu-kynnagh',
+      beurla: 'agender'
+    },
+    createdAt: new Date('2024-03-15'),
+    updatedAt: new Date('2024-03-15')
+  },
+  {
+    id: 'neo-ghneitheas',
+    gaelic: 'neo-ghnèitheas',
+    definition: 'A\' bhith nad neach neo-ghnèitheach.',
+    grammarNotes: 'fir. gin. neo-ghnèitheis',
+    translations: {
+      gaeilge: 'neamh-inscneacht',
+      gaidhligMhanainn: 'neu-kynnid',
+      beurla: 'agenderism'
+    },
+    createdAt: new Date('2024-03-15'),
+    updatedAt: new Date('2024-03-15')
+  },
+  {
     id: 'neo-reireach-a-thaobh-gne',
     gaelic: 'neo-rèireach a-thaobh gnè',
     definition: 'Nach eil a\' leantainn nòrman sòisealta a thaobh gnè.',
@@ -1666,6 +1562,32 @@ export const dictionaryData: DictionaryEntry[] = [
     updatedAt: new Date('2024-03-15')
   },
   {
+    id: 'neo-romansach',
+    gaelic: 'neo-romansach',
+    definition: 'Neach aig nach eil tàladh romansach air daoine.',
+    grammarNotes: 'bua. coi. -aiche',
+    translations: {
+      gaeilge: 'neamh-rómánsach',
+      gaidhligMhanainn: 'neu-graihagh',
+      beurla: 'aromantic'
+    },
+    createdAt: new Date('2024-03-15'),
+    updatedAt: new Date('2024-03-15')
+  },
+  {
+    id: 'neo-romansachd',
+    gaelic: 'neo-romansachd',
+    definition: 'A\' bhith nad neach neo-romansach.',
+    grammarNotes: 'boir. gin. neo-romansachd',
+    translations: {
+      gaeilge: 'neamh-rómánsacht',
+      gaidhligMhanainn: 'neu-graihys',
+      beurla: 'aromanticism'
+    },
+    createdAt: new Date('2024-03-15'),
+    updatedAt: new Date('2024-03-15')
+  },
+  {
     id: 'neo-shastachd-gne',
     gaelic: 'neo-shàstachd gnè',
     definition: 'Faireachdainn de mhì-chofhurtachd le do ghnè.',
@@ -1674,6 +1596,32 @@ export const dictionaryData: DictionaryEntry[] = [
       gaeilge: 'diosfóire inscne',
       gaidhligMhanainn: 'neureayd kynney',
       beurla: 'gender dysphoria'
+    },
+    createdAt: new Date('2024-03-15'),
+    updatedAt: new Date('2024-03-15')
+  },
+  {
+    id: 'neo-sheorsach',
+    gaelic: 'neo-sheòrsach',
+    definition: 'Neach aig nach eil tàladh feiseil air daoine.',
+    grammarNotes: 'bua. coi. -aiche',
+    translations: {
+      gaeilge: 'éighnéasach',
+      gaidhligMhanainn: 'neu-heltynagh',
+      beurla: 'asexual'
+    },
+    createdAt: new Date('2024-03-15'),
+    updatedAt: new Date('2024-03-15')
+  },
+  {
+    id: 'neo-sheorsachd',
+    gaelic: 'neo-sheòrsachd',
+    definition: 'A\' bhith nad neach neo-sheòrsach.',
+    grammarNotes: 'boir. gin. neo-sheòrsachd',
+    translations: {
+      gaeilge: 'éighnéasacht',
+      gaidhligMhanainn: 'neu-heltynys',
+      beurla: 'asexuality'
     },
     createdAt: new Date('2024-03-15'),
     updatedAt: new Date('2024-03-15')
@@ -1718,6 +1666,19 @@ export const dictionaryData: DictionaryEntry[] = [
     updatedAt: new Date('2024-03-15')
   },
   {
+    id: 'obair-lannsa-ath-bhuileachadh-gne',
+    gaelic: 'obair-lannsa ath-bhuileachadh gnè',
+    definition: 'Obair-lannsa gus gnè neach atharrachadh.',
+    grammarNotes: 'boir. gin. obrach-lannsa ath-bhuileachadh gnè',
+    translations: {
+      gaeilge: 'máinliacht athshannadh inscne',
+      gaidhligMhanainn: 'obbraghey-lheihys aa-hoiaghey kynney',
+      beurla: 'gender reassignment surgery'
+    },
+    createdAt: new Date('2024-03-15'),
+    updatedAt: new Date('2024-03-15')
+  },
+  {
     id: 'obair-lannsa-boireannachaidh',
     gaelic: 'obair-lannsa boireannachaidh',
     definition: 'Obair-lannsa gus coltas boireannach a thoirt air bodhaig.',
@@ -1752,6 +1713,45 @@ export const dictionaryData: DictionaryEntry[] = [
       gaeilge: 'máinliacht íochtair coirp',
       gaidhligMhanainn: 'obbraghey-lheihys bun y challin',
       beurla: 'bottom surgery'
+    },
+    createdAt: new Date('2024-03-15'),
+    updatedAt: new Date('2024-03-15')
+  },
+  {
+    id: 'obair-lannsa-daingneachadh-gne',
+    gaelic: 'obair-lannsa daingneachadh gnè',
+    definition: 'Obair-lannsa gus gnè neach atharrachadh.',
+    grammarNotes: 'boir. gin. obrach-lannsa daingneachadh gnè',
+    translations: {
+      gaeilge: 'máinliacht dhaingniú inscne',
+      gaidhligMhanainn: 'obbraghey-lheihys shickyrys kynney',
+      beurla: 'gender confirmation surgery'
+    },
+    createdAt: new Date('2024-03-15'),
+    updatedAt: new Date('2024-03-15')
+  },
+  {
+    id: 'obair-lannsa-fireannachaidh',
+    gaelic: 'obair-lannsa fireannachaidh',
+    definition: 'Obair-lannsa gus coltas fireannach a thoirt air bodhaig.',
+    grammarNotes: 'boir. gin. obrach-lannsa fireannachaidh',
+    translations: {
+      gaeilge: 'máinliacht fhireannaíochta',
+      gaidhligMhanainn: 'obbraghey-lheihys firrynys',
+      beurla: 'masculinisation surgery'
+    },
+    createdAt: new Date('2024-03-15'),
+    updatedAt: new Date('2024-03-15')
+  },
+  {
+    id: 'oidheim-gne',
+    gaelic: 'oidheim-gnè',
+    definition: 'Faireachdainn de thoileachas le do ghnè.',
+    grammarNotes: 'fir. gin. oidheim-ghnè',
+    translations: {
+      gaeilge: 'eafóire inscne',
+      gaidhligMhanainn: 'eunys kynney',
+      beurla: 'gender euphoria'
     },
     createdAt: new Date('2024-03-15'),
     updatedAt: new Date('2024-03-15')
@@ -1809,6 +1809,45 @@ export const dictionaryData: DictionaryEntry[] = [
     updatedAt: new Date('2024-03-15')
   },
   {
+    id: 'pasaigeadh',
+    gaelic: 'pasaigeadh',
+    definition: 'A\' dol seachad mar neach de ghnè eile.',
+    grammarNotes: 'fir. gin. pasaigidh',
+    translations: {
+      gaeilge: 'pasáil',
+      gaidhligMhanainn: 'goll shaghey',
+      beurla: 'passing'
+    },
+    createdAt: new Date('2024-03-15'),
+    updatedAt: new Date('2024-03-15')
+  },
+  {
+    id: 'patran-chromosoman',
+    gaelic: 'patran-chròmasoman',
+    definition: 'An dòigh anns a bheil cròmasoman air an cur còmhla.',
+    grammarNotes: 'fir. gin. patran-chròmasoman',
+    translations: {
+      gaeilge: 'patrún crómasóm',
+      gaidhligMhanainn: 'cummey cromosom',
+      beurla: 'chromosome pattern'
+    },
+    createdAt: new Date('2024-03-15'),
+    updatedAt: new Date('2024-03-15')
+  },
+  {
+    id: 'posadh-aon-sheorsach',
+    gaelic: 'pòsadh aon-sheòrsach',
+    definition: 'Pòsadh eadar dithis dhen aon ghnè.',
+    grammarNotes: 'fir. gin. pòsaidh aon-sheòrsaich',
+    translations: {
+      gaeilge: 'pósadh comhinscneach',
+      gaidhligMhanainn: 'poosee un-kynnagh',
+      beurla: 'same-sex marriage'
+    },
+    createdAt: new Date('2024-03-15'),
+    updatedAt: new Date('2024-03-15')
+  },
+  {
     id: 'pribhleid-eile-sheorsach',
     gaelic: 'pribhleid eile-sheòrsach',
     definition: 'Buannachdan sòisealta a tha daoine eile-sheòrsach a\' faighinn.',
@@ -1817,6 +1856,19 @@ export const dictionaryData: DictionaryEntry[] = [
       gaeilge: 'pribhléid heitrighnéasach',
       gaidhligMhanainn: 'sonney streightagh',
       beurla: 'heterosexual privilege'
+    },
+    createdAt: new Date('2024-03-15'),
+    updatedAt: new Date('2024-03-15')
+  },
+  {
+    id: 'prois',
+    gaelic: 'pròis',
+    definition: 'Faireachdainn de dh\'fhèin-spèis agus misneachd mu do dhearbh-aithne LGDT+.',
+    grammarNotes: 'boir. gin. pròise',
+    translations: {
+      gaeilge: 'bród',
+      gaidhligMhanainn: 'moyrn',
+      beurla: 'pride'
     },
     createdAt: new Date('2024-03-15'),
     updatedAt: new Date('2024-03-15')
@@ -1843,6 +1895,19 @@ export const dictionaryData: DictionaryEntry[] = [
       gaeilge: 'bródúil',
       gaidhligMhanainn: 'moyrnagh',
       beurla: 'proud'
+    },
+    createdAt: new Date('2024-03-15'),
+    updatedAt: new Date('2024-03-15')
+  },
+  {
+    id: 'righ-draga',
+    gaelic: 'rìgh draga',
+    definition: 'Boireannach no neach neo-bhinearan a tha a\' cur orra coltas fireannach mar phàirt de thaisbeanadh ealain.',
+    grammarNotes: 'fir. gin. rìgh draga, iol. rìghrean draga',
+    translations: {
+      gaeilge: 'rí draig',
+      gaidhligMhanainn: 'ree tayrn',
+      beurla: 'drag king'
     },
     createdAt: new Date('2024-03-15'),
     updatedAt: new Date('2024-03-15')
@@ -1978,6 +2043,19 @@ export const dictionaryData: DictionaryEntry[] = [
     updatedAt: new Date('2024-03-15')
   },
   {
+    id: 'subailteachd',
+    gaelic: 'sùbailteachd',
+    definition: 'A\' bhith comasach air atharrachadh.',
+    grammarNotes: 'boir. gin. sùbailteachd',
+    translations: {
+      gaeilge: 'solúbthacht',
+      gaidhligMhanainn: 'lhiggey',
+      beurla: 'flexibility'
+    },
+    createdAt: new Date('2024-03-15'),
+    updatedAt: new Date('2024-03-15')
+  },
+  {
     id: 'subailteachd-gne',
     gaelic: 'sùbailteachd-gnè',
     definition: 'A\' bhith comasach air atharrachadh eadar diofar ghnèithean.',
@@ -1991,14 +2069,40 @@ export const dictionaryData: DictionaryEntry[] = [
     updatedAt: new Date('2024-03-15')
   },
   {
-    id: 'subailteachd',
-    gaelic: 'sùbailteachd',
-    definition: 'A\' bhith comasach air atharrachadh.',
-    grammarNotes: 'boir. gin. sùbailteachd',
+    id: 'taobhadh-feise',
+    gaelic: 'taobhadh-feise',
+    definition: 'An seòrsa dhaoine air a bheil tàladh romansach no feiseil aig neach.',
+    grammarNotes: 'fir. gin. taobhaidh-fheise',
     translations: {
-      gaeilge: 'solúbthacht',
-      gaidhligMhanainn: 'lhiggey',
-      beurla: 'flexibility'
+      gaeilge: 'claonadh gnéis',
+      gaidhligMhanainn: 'ennaghtyn reyth',
+      beurla: 'sexual orientation'
+    },
+    createdAt: new Date('2024-03-15'),
+    updatedAt: new Date('2024-03-15')
+  },
+  {
+    id: 'tar-bhoireannach',
+    gaelic: 'tar-bhoireannach',
+    definition: 'Boireannach tar-ghnèitheach.',
+    grammarNotes: 'boir. gin. tar-bhoireannaich, iol. tar-bhoireannaich',
+    translations: {
+      gaeilge: 'bean tras',
+      gaidhligMhanainn: 'ben harr',
+      beurla: 'trans woman'
+    },
+    createdAt: new Date('2024-03-15'),
+    updatedAt: new Date('2024-03-15')
+  },
+  {
+    id: 'tar-fhireannach',
+    gaelic: 'tar-fhireannach',
+    definition: 'Fireannach tar-ghnèitheach.',
+    grammarNotes: 'fir. gin. tar-fhireannaich, iol. tar-fhireannaich',
+    translations: {
+      gaeilge: 'fear tras',
+      gaidhligMhanainn: 'dooinney harr',
+      beurla: 'trans man'
     },
     createdAt: new Date('2024-03-15'),
     updatedAt: new Date('2024-03-15')
@@ -2069,14 +2173,14 @@ export const dictionaryData: DictionaryEntry[] = [
     updatedAt: new Date('2024-03-15')
   },
   {
-    id: 'tar-ghneitheach-fireann',
-    gaelic: 'tar-ghnèitheach fireann',
-    definition: 'Fear tar-ghnèitheach.',
+    id: 'tar-ghneitheach',
+    gaelic: 'tar-ghnèitheach',
+    definition: 'Neach aig a bheil dearbh-aithne gnè eadar-dhealaichte bhon ghnè a chaidh a bhuileachadh orra nuair a rugadh iad.',
     grammarNotes: 'bua.',
     translations: {
-      gaeilge: 'fear trasinscneach',
-      gaidhligMhanainn: 'dooinney tar-kynnagh',
-      beurla: 'trans man'
+      gaeilge: 'trasinscneach',
+      gaidhligMhanainn: 'tar-kynnagh',
+      beurla: 'transgender'
     },
     createdAt: new Date('2024-03-15'),
     updatedAt: new Date('2024-03-15')
@@ -2095,105 +2199,53 @@ export const dictionaryData: DictionaryEntry[] = [
     updatedAt: new Date('2024-03-15')
   },
   {
-    id: 'leigheas-ro-chasgach-iar-ghabhalach',
-    gaelic: 'leigheas ro-chasgach iar-ghabhalach',
-    definition: 'Leigheas a thèid a thoirt do neach às dèidh dhaibh a bhith an cunnart HIV.',
-    grammarNotes: 'fir. gin. leighis ro-chasgaich iar-ghabhalaich',
+    id: 'tar-ghneitheach-fireann',
+    gaelic: 'tar-ghnèitheach fireann',
+    definition: 'Fear tar-ghnèitheach.',
+    grammarNotes: 'bua.',
     translations: {
-      gaeilge: 'próifiolacsas iarshuí',
-      gaidhligMhanainn: 'lheihys roie-lhiettal lurg-ghoaill',
-      beurla: 'Post-Exposure Prophylaxis'
+      gaeilge: 'fear trasinscneach',
+      gaidhligMhanainn: 'dooinney tar-kynnagh',
+      beurla: 'trans man'
     },
     createdAt: new Date('2024-03-15'),
     updatedAt: new Date('2024-03-15')
   },
   {
-    id: 'leigheas-ro-chasgach-ro-ghabhalach',
-    gaelic: 'leigheas ro-chasgach ro-ghabhalach',
-    definition: 'Leigheas a thèid a thoirt do neach mus bi iad ann an cunnart HIV.',
-    grammarNotes: 'fir. gin. leighis ro-chasgaich ro-ghabhalaich',
+    id: 'tar-ghneitheachadh',
+    gaelic: 'tar-ghnèitheachadh',
+    definition: 'A\' bhith a\' dol tro phròiseas gus gnè atharrachadh.',
+    grammarNotes: 'fir. gin. tar-ghnèitheachaidh',
     translations: {
-      gaeilge: 'próifiolacsas réamhshuí',
-      gaidhligMhanainn: 'lheihys roie-lhiettal roish-ghoaill',
-      beurla: 'Pre-Exposure Prophylaxis'
+      gaeilge: 'trasdúil',
+      gaidhligMhanainn: 'tar-kynnaghtyn',
+      beurla: 'transitioning'
     },
     createdAt: new Date('2024-03-15'),
     updatedAt: new Date('2024-03-15')
   },
   {
-    id: 'obair-lannsa-daingneachadh-gne',
-    gaelic: 'obair-lannsa daingneachadh gnè',
-    definition: 'Obair-lannsa gus gnè neach atharrachadh.',
-    grammarNotes: 'boir. gin. obrach-lannsa daingneachadh gnè',
+    id: 'tar-ghneitheachd',
+    gaelic: 'tar-ghnèitheachd',
+    definition: 'A\' bhith nad neach tar-ghnèitheach.',
+    grammarNotes: 'boir. gin. tar-ghnèitheachd',
     translations: {
-      gaeilge: 'máinliacht dhaingniú inscne',
-      gaidhligMhanainn: 'obbraghey-lheihys shickyrys kynney',
-      beurla: 'gender confirmation surgery'
+      gaeilge: 'trasinscneacht',
+      gaidhligMhanainn: 'tar-kynnys',
+      beurla: 'transgenderism'
     },
     createdAt: new Date('2024-03-15'),
     updatedAt: new Date('2024-03-15')
   },
   {
-    id: 'oidheim-gne',
-    gaelic: 'oidheim-gnè',
-    definition: 'Faireachdainn de thoileachas le do ghnè.',
-    grammarNotes: 'fir. gin. oidheim-ghnè',
+    id: 'tar-ghneitheas',
+    gaelic: 'tar-ghnèitheas',
+    definition: 'A\' bhith nad neach tar-ghnèitheach.',
+    grammarNotes: 'fir. gin. tar-ghnèitheis',
     translations: {
-      gaeilge: 'eafóire inscne',
-      gaidhligMhanainn: 'eunys kynney',
-      beurla: 'gender euphoria'
-    },
-    createdAt: new Date('2024-03-15'),
-    updatedAt: new Date('2024-03-15')
-  },
-  {
-    id: 'pasaigeadh',
-    gaelic: 'pasaigeadh',
-    definition: 'A\' dol seachad mar neach de ghnè eile.',
-    grammarNotes: 'fir. gin. pasaigidh',
-    translations: {
-      gaeilge: 'pasáil',
-      gaidhligMhanainn: 'goll shaghey',
-      beurla: 'passing'
-    },
-    createdAt: new Date('2024-03-15'),
-    updatedAt: new Date('2024-03-15')
-  },
-  {
-    id: 'patran-chromosoman',
-    gaelic: 'patran-chròmasoman',
-    definition: 'An dòigh anns a bheil cròmasoman air an cur còmhla.',
-    grammarNotes: 'fir. gin. patran-chròmasoman',
-    translations: {
-      gaeilge: 'patrún crómasóm',
-      gaidhligMhanainn: 'cummey cromosom',
-      beurla: 'chromosome pattern'
-    },
-    createdAt: new Date('2024-03-15'),
-    updatedAt: new Date('2024-03-15')
-  },
-  {
-    id: 'posadh-aon-sheorsach',
-    gaelic: 'pòsadh aon-sheòrsach',
-    definition: 'Pòsadh eadar dithis dhen aon ghnè.',
-    grammarNotes: 'fir. gin. pòsaidh aon-sheòrsaich',
-    translations: {
-      gaeilge: 'pósadh comhinscneach',
-      gaidhligMhanainn: 'poosee un-kynnagh',
-      beurla: 'same-sex marriage'
-    },
-    createdAt: new Date('2024-03-15'),
-    updatedAt: new Date('2024-03-15')
-  },
-  {
-    id: 'taobhadh-feise',
-    gaelic: 'taobhadh-feise',
-    definition: 'An seòrsa dhaoine air a bheil tàladh romansach no feiseil aig neach.',
-    grammarNotes: 'fir. gin. taobhaidh-fheise',
-    translations: {
-      gaeilge: 'claonadh gnéis',
-      gaidhligMhanainn: 'ennaghtyn reyth',
-      beurla: 'sexual orientation'
+      gaeilge: 'trasinscneacht',
+      gaidhligMhanainn: 'tar-kynnid',
+      beurla: 'transgenderism'
     },
     createdAt: new Date('2024-03-15'),
     updatedAt: new Date('2024-03-15')
@@ -2207,6 +2259,19 @@ export const dictionaryData: DictionaryEntry[] = [
       gaeilge: 'teiripe ionadaíochta hormóin',
       gaidhligMhanainn: 'lheihys ynnydagh hormonagh',
       beurla: 'hormone replacement therapy'
+    },
+    createdAt: new Date('2024-03-15'),
+    updatedAt: new Date('2024-03-15')
+  },
+  {
+    id: 'teiripe-ionadachd-estrogen',
+    gaelic: 'teiripe ionadachd estrogen',
+    definition: 'Leigheas a bhios a\' toirt estrogen do neach gus coltas nas boireannaiche a thoirt dhaibh.',
+    grammarNotes: 'boir. gin. teiripe ionadachd estrogen',
+    translations: {
+      gaeilge: 'teiripe ionadaíochta éastraigin',
+      gaidhligMhanainn: 'lheihys ynnydagh estrogen',
+      beurla: 'estrogen replacement therapy'
     },
     createdAt: new Date('2024-03-15'),
     updatedAt: new Date('2024-03-15')
@@ -2233,97 +2298,6 @@ export const dictionaryData: DictionaryEntry[] = [
       gaeilge: 'teiripe ionadaíochta téististéaróin',
       gaidhligMhanainn: 'lheihys ynnydagh testosterone',
       beurla: 'testosterone replacement therapy'
-    },
-    createdAt: new Date('2024-03-15'),
-    updatedAt: new Date('2024-03-15')
-  },
-  {
-    id: 'teiripe-ionadachd-estrogen',
-    gaelic: 'teiripe ionadachd estrogen',
-    definition: 'Leigheas a bhios a\' toirt estrogen do neach gus coltas nas boireannaiche a thoirt dhaibh.',
-    grammarNotes: 'boir. gin. teiripe ionadachd estrogen',
-    translations: {
-      gaeilge: 'teiripe ionadaíochta éastraigin',
-      gaidhligMhanainn: 'lheihys ynnydagh estrogen',
-      beurla: 'estrogen replacement therapy'
-    },
-    createdAt: new Date('2024-03-15'),
-    updatedAt: new Date('2024-03-15')
-  },
-  {
-    id: 'ioma-leannanach',
-    gaelic: 'ioma-leannanach',
-    definition: 'Neach aig a bheil dàimh romansach le barrachd air aon neach aig an aon àm.',
-    grammarNotes: 'bua. coi. -aiche',
-    translations: {
-      gaeilge: 'il-leannánach',
-      gaidhligMhanainn: 'ymmodee-ghraihagh',
-      beurla: 'polyamorous'
-    },
-    createdAt: new Date('2024-03-15'),
-    updatedAt: new Date('2024-03-15')
-  },
-  {
-    id: 'ioma-leannanachd',
-    gaelic: 'ioma-leannanachd',
-    definition: 'A\' bhith ann an dàimh romansach le barrachd air aon neach aig an aon àm.',
-    grammarNotes: 'boir. gin. ioma-leannanachd',
-    translations: {
-      gaeilge: 'il-leannánacht',
-      gaidhligMhanainn: 'ymmodee-ghraih',
-      beurla: 'polyamory'
-    },
-    createdAt: new Date('2024-03-15'),
-    updatedAt: new Date('2024-03-15')
-  },
-  {
-    id: 'ioma-sheorsach',
-    gaelic: 'ioma-sheòrsach',
-    definition: 'Neach aig a bheil tàladh romansach no feiseil air daoine de dhiofar ghnèithean.',
-    grammarNotes: 'bua. coi. -aiche',
-    translations: {
-      gaeilge: 'ilghnéasach',
-      gaidhligMhanainn: 'ymmodee-heltynagh',
-      beurla: 'polysexual'
-    },
-    createdAt: new Date('2024-03-15'),
-    updatedAt: new Date('2024-03-15')
-  },
-  {
-    id: 'ire-nan-anti-corp',
-    gaelic: 'ìre nan anti-corp',
-    definition: 'An uiread de dh\'anti-cuirp a tha san fhuil.',
-    grammarNotes: 'boir. gin. ìre nan anti-corp',
-    translations: {
-      gaeilge: 'leibhéal antasubstaintí',
-      gaidhligMhanainn: 'corrym ancorp',
-      beurla: 'antibody level'
-    },
-    createdAt: new Date('2024-03-15'),
-    updatedAt: new Date('2024-03-15')
-  },
-  {
-    id: 'leasbachd',
-    gaelic: 'leasbachd',
-    definition: 'A\' bhith nad leasbach.',
-    grammarNotes: 'boir. gin. leasbachd',
-    translations: {
-      gaeilge: 'leispiacht',
-      gaidhligMhanainn: 'lesbiaghtys',
-      beurla: 'lesbianism'
-    },
-    createdAt: new Date('2024-03-15'),
-    updatedAt: new Date('2024-03-15')
-  },
-  {
-    id: 'obair-lannsa-fireannachaidh',
-    gaelic: 'obair-lannsa fireannachaidh',
-    definition: 'Obair-lannsa gus coltas fireannach a thoirt air bodhaig.',
-    grammarNotes: 'boir. gin. obrach-lannsa fireannachaidh',
-    translations: {
-      gaeilge: 'máinliacht fhireannaíochta',
-      gaidhligMhanainn: 'obbraghey-lheihys firrynys',
-      beurla: 'masculinisation surgery'
     },
     createdAt: new Date('2024-03-15'),
     updatedAt: new Date('2024-03-15')
