@@ -9,6 +9,7 @@ import {
   IconButton,
   Divider,
   CircularProgress,
+  Link,
 } from '@mui/material';
 import VolumeUpIcon from '@mui/icons-material/VolumeUp';
 import { DictionaryEntry } from '../types/DictionaryEntry';
@@ -167,17 +168,62 @@ const EntryPage: React.FC = () => {
         <Box>
           <Box display="flex" alignItems="center" gap={2} mb={2}>
             <Typography variant="subtitle1">🇮🇪</Typography>
-            <Typography>{entry.translations.gaeilge}</Typography>
+            {entry.translations.gaeilge ? (
+              <Typography>{entry.translations.gaeilge}</Typography>
+            ) : (
+              <Link 
+                href="mailto:fios@angeidhealur.scot"
+                color="primary"
+                sx={{ 
+                  textDecoration: 'none',
+                  '&:hover': {
+                    textDecoration: 'underline'
+                  }
+                }}
+              >
+                Chan eil eadar-theangachadh againn. Cuir moladh dhuinn
+              </Link>
+            )}
           </Box>
 
           <Box display="flex" alignItems="center" gap={2} mb={2}>
             <Typography variant="subtitle1">🇮🇲</Typography>
-            <Typography>{entry.translations.gaidhligMhanainn}</Typography>
+            {entry.translations.gaidhligMhanainn ? (
+              <Typography>{entry.translations.gaidhligMhanainn}</Typography>
+            ) : (
+              <Link 
+                href="mailto:fios@angeidhealur.scot"
+                color="primary"
+                sx={{ 
+                  textDecoration: 'none',
+                  '&:hover': {
+                    textDecoration: 'underline'
+                  }
+                }}
+              >
+                Chan eil eadar-theangachadh againn. Cuir moladh dhuinn
+              </Link>
+            )}
           </Box>
 
           <Box display="flex" alignItems="center" gap={2}>
             <Typography variant="subtitle1">🏴󠁧󠁢󠁥󠁮󠁧󠁿</Typography>
-            <Typography>{entry.translations.beurla}</Typography>
+            {entry.translations.beurla ? (
+              <Typography>{entry.translations.beurla}</Typography>
+            ) : (
+              <Link 
+                href="mailto:fios@angeidhealur.scot"
+                color="primary"
+                sx={{ 
+                  textDecoration: 'none',
+                  '&:hover': {
+                    textDecoration: 'underline'
+                  }
+                }}
+              >
+                Chan eil eadar-theangachadh againn. Cuir moladh dhuinn
+              </Link>
+            )}
           </Box>
         </Box>
       </Paper>

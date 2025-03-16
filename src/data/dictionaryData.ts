@@ -59,7 +59,7 @@ export const dictionaryData: DictionaryEntry[] = [
     definition: 'Nuair a tha cuideigin no buidheann ag aithneachadh gu h-oifigeil gnè cuideigin.',
     grammarNotes: 'fir. gin. aithneachaidh gnè',
     translations: {
-      gaeilge: 'aithint inscne',
+      gaeilge: 'aitheantas inscne',
       gaidhligMhanainn: 'goaill-rish kynney',
       beurla: 'gender recognition'
     },
@@ -151,7 +151,7 @@ export const dictionaryData: DictionaryEntry[] = [
     grammarNotes: 'gnàthas',
     translations: {
       gaeilge: 'iar-obráid',
-      gaidhligMhanainn: 'lurg obbraghey',
+      gaidhligMhanainn: 'eear-obraid',
       beurla: 'post-op'
     },
     createdAt: new Date('2024-03-15'),
@@ -176,9 +176,9 @@ export const dictionaryData: DictionaryEntry[] = [
     definition: 'Nuair a tha cuideigin a\' faireachdainn tàladh romansach no feiseil air daoine de ghnè sam bith.',
     grammarNotes: 'fir. gin. annais dhen dà-sheòrsachd',
     translations: {
-      gaeilge: 'dáthreoch',
-      gaidhligMhanainn: 'daa-heltynagh',
-      beurla: 'bisexual'
+      gaeilge: 'dá-fhiosrach',
+      gaidhligMhanainn: '',
+      beurla: 'bicurious'
     },
     createdAt: new Date('2024-03-15'),
     updatedAt: new Date('2024-03-15')
@@ -190,7 +190,7 @@ export const dictionaryData: DictionaryEntry[] = [
     grammarNotes: 'fir. gin. anti-cuirp, iol. anti-cuirp',
     translations: {
       gaeilge: 'antasubstaint',
-      gaidhligMhanainn: 'ancorp',
+      gaidhligMhanainn: 'noi-chorpeen',
       beurla: 'antibody'
     },
     createdAt: new Date('2024-03-15'),
@@ -215,9 +215,9 @@ export const dictionaryData: DictionaryEntry[] = [
     definition: 'A\' buntainn ri daoine dhen aon ghnè.',
     grammarNotes: 'bua. coi. -aiche',
     translations: {
-      gaeilge: 'homaighnéasach',
-      gaidhligMhanainn: 'co-heltynagh',
-      beurla: 'homosexual'
+      gaeilge: 'comhghnéis',
+      gaidhligMhanainn: '',
+      beurla: 'same-sex'
     },
     createdAt: new Date('2024-03-15'),
     updatedAt: new Date('2024-03-15')
@@ -228,8 +228,8 @@ export const dictionaryData: DictionaryEntry[] = [
     definition: 'Obair-lannsa a tha a\' toirt air a\' bhodhaig a bhith nas fhaisge air coltas na gnè a tha cuideigin ag iarraidh.',
     grammarNotes: 'fir. gin. ath-bhuileachaidh gnè',
     translations: {
-      gaeilge: 'athrú inscne',
-      gaidhligMhanainn: 'caghlaa kynney',
+      gaeilge: 'aistriú inscne',
+      gaidhligMhanainn: '',
       beurla: 'gender reassignment'
     },
     createdAt: new Date('2024-03-15'),
@@ -243,7 +243,7 @@ export const dictionaryData: DictionaryEntry[] = [
     translations: {
       gaeilge: 'bean aerach',
       gaidhligMhanainn: 'ben aeragh',
-      beurla: 'lesbian'
+      beurla: 'a gay woman / lesbian'
     },
     createdAt: new Date('2024-03-15'),
     updatedAt: new Date('2024-03-15')
@@ -267,8 +267,8 @@ export const dictionaryData: DictionaryEntry[] = [
     definition: 'Bile a chaidh a chur air beulaibh Pàrlamaid na h-Alba ann an 2022 gus an Achd Aithneachadh Gnè (2004) atharrachadh.',
     grammarNotes: 'fir. gin. Bile Ath-leasachaidh Aithneachadh Gnè',
     translations: {
-      gaeilge: 'Bille um Leasú ar Aithint Inscne (Albain)',
-      gaidhligMhanainn: 'Billey Lhiasaghey Goaill-rish Kynney (Nalbin)',
+      gaeilge: '',
+      gaidhligMhanainn: '',
       beurla: 'Gender Recognition Reform (Scotland) Bill'
     },
     createdAt: new Date('2024-03-15'),
@@ -281,7 +281,7 @@ export const dictionaryData: DictionaryEntry[] = [
     grammarNotes: 'boir. gin. bìnearachd gnè',
     translations: {
       gaeilge: 'dénárthacht inscne',
-      gaidhligMhanainn: 'daa-kynnid',
+      gaidhligMhanainn: '',
       beurla: 'gender binary'
     },
     createdAt: new Date('2024-03-15'),
@@ -294,7 +294,7 @@ export const dictionaryData: DictionaryEntry[] = [
     grammarNotes: 'fir. gin. Bìorais Easbhaidh Ion-dhìon Daonna',
     translations: {
       gaeilge: 'Víreas Easpa Imdhíonachta Daonna',
-      gaidhligMhanainn: 'Virus Laccal Coadey Deiney',
+      gaidhligMhanainn: 'veerys genney jeenaght sheelnaue',
       beurla: 'Human Immunodeficiency Virus'
     },
     createdAt: new Date('2024-03-15'),
@@ -308,7 +308,7 @@ export const dictionaryData: DictionaryEntry[] = [
     translations: {
       gaeilge: 'baineann go fireann',
       gaidhligMhanainn: 'bwoirryn gys firryn',
-      beurla: 'female to male'
+      beurla: 'female to male (FTM)'
     },
     createdAt: new Date('2024-03-15'),
     updatedAt: new Date('2024-03-15')
@@ -319,8 +319,8 @@ export const dictionaryData: DictionaryEntry[] = [
     definition: 'Neach a tha a\' nochdadh feartan gnè boireannach.',
     grammarNotes: 'bua.',
     translations: {
-      gaeilge: 'baineann-léirithe',
-      gaidhligMhanainn: 'bwoirryn-chaghlaa',
+      gaeilge: 'léiriú baineann',
+      gaidhligMhanainn: '',
       beurla: 'feminine-presenting'
     },
     createdAt: new Date('2024-03-15'),
@@ -333,7 +333,7 @@ export const dictionaryData: DictionaryEntry[] = [
     grammarNotes: 'iol.',
     translations: {
       gaeilge: 'mná a mbíonn gnéas acu le mná',
-      gaidhligMhanainn: 'mraane ta jannoo graih rish mraane',
+      gaidhligMhanainn: '',
       beurla: 'women who have sex with women'
     },
     createdAt: new Date('2024-03-15'),
@@ -345,8 +345,8 @@ export const dictionaryData: DictionaryEntry[] = [
     definition: 'Hòrmon a tha a\' toirt buaidh air feartan gnè.',
     grammarNotes: 'boir. gin. brodaig-ghnè, iol. brodagan-gnè',
     translations: {
-      gaeilge: 'hormón inscne',
-      gaidhligMhanainn: 'hormon kynney',
+      gaeilge: 'gnéas-hormón',
+      gaidhligMhanainn: '',
       beurla: 'sex hormone'
     },
     createdAt: new Date('2024-03-15'),
@@ -359,7 +359,7 @@ export const dictionaryData: DictionaryEntry[] = [
     grammarNotes: 'boir. gin. brodaig nan clach, iol. brodagan nan clach',
     translations: {
       gaeilge: 'téististéarón',
-      gaidhligMhanainn: 'testosterone',
+      gaidhligMhanainn: '',
       beurla: 'testosterone'
     },
     createdAt: new Date('2024-03-15'),
@@ -372,7 +372,7 @@ export const dictionaryData: DictionaryEntry[] = [
     grammarNotes: 'boir. gin. brodaig, iol. brodagan',
     translations: {
       gaeilge: 'hormón',
-      gaidhligMhanainn: 'hormon',
+      gaidhligMhanainn: 'broddag',
       beurla: 'hormone'
     },
     createdAt: new Date('2024-03-15'),
@@ -385,7 +385,7 @@ export const dictionaryData: DictionaryEntry[] = [
     grammarNotes: 'iol.',
     translations: {
       gaeilge: 'baill ghiniúna',
-      gaidhligMhanainn: 'oltyn gientyn',
+      gaidhligMhanainn: 'comyssyn',
       beurla: 'genitals'
     },
     createdAt: new Date('2024-03-15'),
