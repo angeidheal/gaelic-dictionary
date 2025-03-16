@@ -40,31 +40,21 @@ export const EntryPage = () => {
             const baseUrl = process.env.PUBLIC_URL || '';
             const audioUrl = `${baseUrl}${result.audioUrl}`;
             
-            console.log('Loading audio from:', audioUrl);
-            
             const newSound = new Howl({
               src: [audioUrl],
               html5: true,
               onload: () => {
-                console.log('Audio loaded successfully');
                 setHasAudio(true);
                 setLoading(false);
               },
-              onloaderror: (id, error) => {
-                console.error('Error loading audio:', error);
+              onloaderror: () => {
                 setAudioError('Failed to load audio file');
                 setHasAudio(false);
                 setLoading(false);
               },
-              onplay: () => {
-                setIsPlaying(true);
-              },
-              onend: () => {
-                setIsPlaying(false);
-              },
-              onstop: () => {
-                setIsPlaying(false);
-              },
+              onplay: () => setIsPlaying(true),
+              onend: () => setIsPlaying(false),
+              onstop: () => setIsPlaying(false),
             });
             setSound(newSound);
           } catch (error) {
@@ -85,12 +75,13 @@ export const EntryPage = () => {
 
     fetchEntry();
 
+    // Cleanup function
     return () => {
       if (sound) {
         sound.unload();
       }
     };
-  }, [id]);
+  }, [id, sound]);
 
   useEffect(() => {
     if (sound) {
