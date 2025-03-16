@@ -1978,14 +1978,14 @@ export const dictionaryData: DictionaryEntry[] = [
     updatedAt: new Date('2024-03-15')
   },
   {
-    id: 'sionndram-easbhaidh-ion-dhion-daonna',
-    gaelic: 'Sionndram Easbhaidh Ion-dhìon Daonna',
-    definition: 'Bìoras a tha a\' lagachadh siostam dìon-slàinte na bodhaige.',
-    grammarNotes: 'fir. gin. Bìorais Easbhaidh Ion-dhìon Daonna',
+    id: 'sionndram-easbhaidh-ion-dhion-togte',
+    gaelic: 'Sionndram Easbhaidh Ion-dhìon Togte',
+    definition: '',
+    grammarNotes: '',
     translations: {
-      gaeilge: 'Víreas Easpa Imdhíonachta Daonna',
-      gaidhligMhanainn: 'Virus Laccal Coadey Deiney',
-      beurla: 'Human Immunodeficiency Virus'
+      gaeilge: 'Siondróm Easpa Imdhíonachta Faighte',
+      gaidhligMhanainn: '',
+      beurla: 'Acquired Immunodeficiency Syndrome (AIDS)'
     },
     createdAt: new Date('2024-03-15'),
     updatedAt: new Date('2024-03-15')
@@ -1996,8 +1996,8 @@ export const dictionaryData: DictionaryEntry[] = [
     definition: 'Suidheachadh far nach eil bodhaig neach a\' freagairt ri testosterone.',
     grammarNotes: 'fir. gin. Sionndraim Neo-mhothalachd nan Gineachan Fireann',
     translations: {
-      gaeilge: 'Siondróm Neamh-íogaireachta Andróigin',
-      gaidhligMhanainn: 'Shingys Neu-vioghey ny Giennyn Firryn',
+      gaeilge: 'Siondróm Neamh-mhothálachta ar Andraiginí',
+      gaidhligMhanainn: '',
       beurla: 'Androgen Insensitivity Syndrome'
     },
     createdAt: new Date('2024-03-15'),
@@ -2010,7 +2010,7 @@ export const dictionaryData: DictionaryEntry[] = [
     grammarNotes: 'fir. gin. speactraim ghnè',
     translations: {
       gaeilge: 'speictream inscne',
-      gaidhligMhanainn: 'speagtrum kynney',
+      gaidhligMhanainn: '',
       beurla: 'gender spectrum'
     },
     createdAt: new Date('2024-03-15'),
@@ -2023,7 +2023,7 @@ export const dictionaryData: DictionaryEntry[] = [
     grammarNotes: 'boir. gin. sùbailteachd',
     translations: {
       gaeilge: 'solúbthacht',
-      gaidhligMhanainn: 'lhiggey',
+      gaidhligMhanainn: '',
       beurla: 'flexibility'
     },
     createdAt: new Date('2024-03-15'),
@@ -2036,8 +2036,8 @@ export const dictionaryData: DictionaryEntry[] = [
     grammarNotes: 'boir. gin. sùbailteachd-gnè',
     translations: {
       gaeilge: 'solúbthacht inscne',
-      gaidhligMhanainn: 'lhiggey kynney',
-      beurla: 'gender flexibility'
+      gaidhligMhanainn: '',
+      beurla: 'gender fluidity'
     },
     createdAt: new Date('2024-03-15'),
     updatedAt: new Date('2024-03-15')
@@ -2061,8 +2061,8 @@ export const dictionaryData: DictionaryEntry[] = [
     definition: 'An seòrsa dhaoine air a bheil tàladh romansach no feiseil aig neach.',
     grammarNotes: 'fir. gin. taobhaidh-fheise',
     translations: {
-      gaeilge: 'claonadh gnéis',
-      gaidhligMhanainn: 'ennaghtyn reyth',
+      gaeilge: 'gnéaschlaonadh / claonadh gnéis',
+      gaidhligMhanainn: '',
       beurla: 'sexual orientation'
     },
     createdAt: new Date('2024-03-15'),
@@ -2095,14 +2095,92 @@ export const dictionaryData: DictionaryEntry[] = [
     updatedAt: new Date('2024-03-15')
   },
   {
+    id: 'tar-bhalach',
+    gaelic: 'tar-bhalach',
+    definition: 'Balach tar-ghnèitheach.',
+    grammarNotes: '',
+    translations: {
+      gaeilge: 'buachaill tras',
+      gaidhligMhanainn: '',
+      beurla: 'a trans boy'
+    },
+    createdAt: new Date('2024-03-15'),
+    updatedAt: new Date('2024-03-15')
+  },
+  {
+    id: 'tar-bhoireann',
+    gaelic: 'tar-bhoireann',
+    definition: '',
+    grammarNotes: '',
+    translations: {
+      gaeilge: 'trasbhaineann',
+      gaidhligMhanainn: '',
+      beurla: 'transfeminine'
+    },
+    createdAt: new Date('2024-03-15'),
+    updatedAt: new Date('2024-03-15')
+  },
+  {
     id: 'tar-bhoireannach',
     gaelic: 'tar-bhoireannach',
     definition: 'Boireannach tar-ghnèitheach.',
     grammarNotes: 'boir. gin. tar-bhoireannaich, iol. tar-bhoireannaich',
     translations: {
-      gaeilge: 'bean tras',
-      gaidhligMhanainn: 'ben harr',
-      beurla: 'trans woman'
+      gaeilge: 'bean thras',
+      gaidhligMhanainn: '',
+      beurla: 'a trans woman'
+    },
+    createdAt: new Date('2024-03-15'),
+    updatedAt: new Date('2024-03-15')
+  },
+  {
+    id: 'tar-chaileag',
+    gaelic: 'tar-chaileag',
+    definition: 'Caileagan tar-ghnèitheach.',
+    grammarNotes: '',
+    translations: {
+      gaeilge: 'cailín tras',
+      gaidhligMhanainn: '',
+      beurla: 'a trans girl'
+    },
+    createdAt: new Date('2024-03-15'),
+    updatedAt: new Date('2024-03-15')
+  },
+  {
+    id: 'tar-dhuine',
+    gaelic: 'tar-dhuine',
+    definition: 'Duine tar-ghnèitheach.',
+    grammarNotes: '',
+    translations: {
+      gaeilge: 'fear tras',
+      gaidhligMhanainn: '',
+      beurla: 'a trans man'
+    },
+    createdAt: new Date('2024-03-15'),
+    updatedAt: new Date('2024-03-15')
+  },
+  {
+    id: 'tar-eidiche',
+    gaelic: 'tar-eidiche',
+    definition: '',
+    grammarNotes: '',
+    translations: {
+      gaeilge: 'trasfheisteoir',
+      gaidhligMhanainn: '',
+      beurla: 'a transvestite'
+    },
+    createdAt: new Date('2024-03-15'),
+    updatedAt: new Date('2024-03-15')
+  },
+  {
+    id: 'tar-fhireann',
+    gaelic: 'tar-fhireann',
+    definition: '',
+    grammarNotes: '',
+    translations: {
+      gaeilge: 'trasfhireann',
+      gaidhligMhanainn: '',
+      beurla: 'transmasculine'
     },
     createdAt: new Date('2024-03-15'),
     updatedAt: new Date('2024-03-15')
@@ -2129,6 +2207,188 @@ export const dictionaryData: DictionaryEntry[] = [
       gaeilge: 'trasinscneach',
       gaidhligMhanainn: 'tar-kynnagh',
       beurla: 'transgender'
+    },
+    createdAt: new Date('2024-03-15'),
+    updatedAt: new Date('2024-03-15')
+  },
+  {
+    id: 'tar-neach',
+    gaelic: 'tar-neach',
+    definition: '',
+    grammarNotes: '',
+    translations: {
+      gaeilge: 'duine tras',
+      gaidhligMhanainn: '',
+      beurla: 'a trans person'
+    },
+    createdAt: new Date('2024-03-15'),
+    updatedAt: new Date('2024-03-15')
+  },
+  {
+    id: 'tar-sheorsach',
+    gaelic: 'tar-sheòrsach',
+    definition: '',
+    grammarNotes: '',
+    translations: {
+      gaeilge: 'trasghnéasach',
+      gaidhligMhanainn: '',
+      beurla: 'transsexual'
+    },
+    createdAt: new Date('2024-03-15'),
+    updatedAt: new Date('2024-03-15')
+  },
+  {
+    id: 'te-foidhpe',
+    gaelic: 'te foidhpe',
+    definition: '',
+    grammarNotes: '',
+    translations: {
+      gaeilge: 'bunadóir / bunpháirtí',
+      gaidhligMhanainn: '',
+      beurla: 'bottom'
+    },
+    createdAt: new Date('2024-03-15'),
+    updatedAt: new Date('2024-03-15')
+  },
+  {
+    id: 'te-os-a-cionn',
+    gaelic: 'te os a cionn',
+    definition: '',
+    grammarNotes: '',
+    translations: {
+      gaeilge: 'barradóir / barrpháirtí',
+      gaidhligMhanainn: '',
+      beurla: 'top'
+    },
+    createdAt: new Date('2024-03-15'),
+    updatedAt: new Date('2024-03-15')
+  },
+  {
+    id: 'teiripe-brodagan-boireannachaidh',
+    gaelic: 'teiripe brodagan boireannachaidh',
+    definition: '',
+    grammarNotes: '',
+    translations: {
+      gaeilge: '',
+      gaidhligMhanainn: '',
+      beurla: 'feminising hormone therapy'
+    },
+    createdAt: new Date('2024-03-15'),
+    updatedAt: new Date('2024-03-15')
+  },
+  {
+    id: 'teiripe-brodagan-fireannachaidh',
+    gaelic: 'teiripe brodagan fireannachaidh',
+    definition: '',
+    grammarNotes: '',
+    translations: {
+      gaeilge: '',
+      gaidhligMhanainn: '',
+      beurla: 'masculinising hormone therapy'
+    },
+    createdAt: new Date('2024-03-15'),
+    updatedAt: new Date('2024-03-15')
+  },
+  {
+    id: 'teiripe-iompachaidh',
+    gaelic: 'teiripe iompachaidh',
+    definition: '',
+    grammarNotes: '',
+    translations: {
+      gaeilge: 'teiripe iompaithe',
+      gaidhligMhanainn: '',
+      beurla: 'conversion therapy'
+    },
+    createdAt: new Date('2024-03-15'),
+    updatedAt: new Date('2024-03-15')
+  },
+  {
+    id: 'teiripe-ionadachadh-bhrodagan',
+    gaelic: 'teiripe ionadachadh bhrodagan',
+    definition: '',
+    grammarNotes: '',
+    translations: {
+      gaeilge: 'teiripe athsholáthair hormón',
+      gaidhligMhanainn: '',
+      beurla: 'hormone replacement therapy (HRT)'
+    },
+    createdAt: new Date('2024-03-15'),
+    updatedAt: new Date('2024-03-15')
+  },
+  {
+    id: 'teisteanas-aithneachadh-gne',
+    gaelic: 'teisteanas aithneachadh gnè',
+    definition: '',
+    grammarNotes: '',
+    translations: {
+      gaeilge: 'deimhniú aitheantais inscne',
+      gaidhligMhanainn: '',
+      beurla: 'gender recognition certificate (GRC)'
+    },
+    createdAt: new Date('2024-03-15'),
+    updatedAt: new Date('2024-03-15')
+  },
+  {
+    id: 'teisteostaron',
+    gaelic: 'teisteostaron',
+    definition: '',
+    grammarNotes: '',
+    translations: {
+      gaeilge: 'téististéarón',
+      gaidhligMhanainn: '',
+      beurla: 'testosterone'
+    },
+    createdAt: new Date('2024-03-15'),
+    updatedAt: new Date('2024-03-15')
+  },
+  {
+    id: 'thar-bhith-beo',
+    gaelic: 'thar-bhith-beò',
+    definition: '',
+    grammarNotes: '',
+    translations: {
+      gaeilge: 'trasbheomhar',
+      gaidhligMhanainn: '',
+      beurla: 'cross-living'
+    },
+    createdAt: new Date('2024-03-15'),
+    updatedAt: new Date('2024-03-15')
+  },
+  {
+    id: 'tighinn-a-mach',
+    gaelic: 'tighinn a-mach',
+    definition: '',
+    grammarNotes: '',
+    translations: {
+      gaeilge: 'teacht amach',
+      gaidhligMhanainn: '',
+      beurla: 'coming out'
+    },
+    createdAt: new Date('2024-03-15'),
+    updatedAt: new Date('2024-03-15')
+  },
+  {
+    id: 'uile-ghneitheach',
+    gaelic: 'uile-ghnèitheach',
+    definition: '',
+    grammarNotes: '',
+    translations: {
+      gaeilge: '',
+      gaidhligMhanainn: '',
+      beurla: 'unigender'
+    },
+    createdAt: new Date('2024-03-15'),
+    updatedAt: new Date('2024-03-15')
+  },
+  {
+    id: 'uile-sheorsach',
+    gaelic: 'uile-sheòrsach',
+    definition: '',
+    grammarNotes: '',
+    translations: {
+      gaeilge: '',
+      gaidhligMhanainn: '',
+      beurla: 'unisex'
     },
     createdAt: new Date('2024-03-15'),
     updatedAt: new Date('2024-03-15')
