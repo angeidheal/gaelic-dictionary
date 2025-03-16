@@ -158,7 +158,7 @@ const App = () => {
         <Layout onThemeToggle={() => setIsDarkMode(!isDarkMode)} isDarkMode={isDarkMode}>
           <Routes>
             <Route path="/" element={<SearchPage />} />
-            <Route path="/facal/:id" element={<EntryPage />} />
+            <Route path="/:id" element={<EntryPage />} />
             <Route path="/mu-dheidhinn" element={<AboutPage />} />
             <Route path="/brabhsaich" element={<BrowsePage />} />
           </Routes>

@@ -101,7 +101,7 @@ const BrowsePage: React.FC = () => {
           {entries.map((entry) => (
             <ListItemButton
               key={entry.id}
-              onClick={() => navigate(`/facal/${entry.id}`, { state: { from: '/brabhsaich' } })}
+              onClick={() => navigate(`/${entry.id}`, { state: { from: '/brabhsaich' } })}
               sx={{
                 mb: 1,
                 borderRadius: 1,
