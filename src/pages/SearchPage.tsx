@@ -57,102 +57,98 @@ const SearchPage: React.FC = () => {
   }, [searchQuery]);
 
   return (
-    <Box sx={{ maxWidth: 800, mx: 'auto', p: { xs: 2, sm: 3 } }}>
-      <Box 
-        sx={{ 
-          display: 'flex', 
-          flexDirection: 'column',
-          alignItems: 'center', 
-          mb: 4,
-          gap: 2,
-        }}
-      >
-        <Link 
-          href="/" 
+    <>
+      <Box sx={{ mb: 4 }}>
+        <Box 
           sx={{ 
-            textDecoration: 'none',
-            display: 'flex',
+            display: 'flex', 
             flexDirection: 'column',
-            alignItems: 'center',
-            gap: 1,
+            alignItems: 'center', 
+            gap: 2,
           }}
         >
-          <Box
-            component="img"
-            src="/faclair-nan-geidheal/assets/logo.png"
-            alt=""
-            onError={(e) => {
-              console.error('Error loading logo:', e);
-              const img = e.target as HTMLImageElement;
-              console.log('Attempted logo URL:', img.src);
-            }}
-            sx={{
-              width: { xs: 80, sm: 100 },
-              height: 'auto',
-              mb: 1,
-              borderRadius: { xs: '10px', sm: '13px' },
-              WebkitBorderRadius: { xs: '10px', sm: '13px' },
-            }}
-          />
-          <Typography 
-            variant="h4" 
-            component="h1" 
+          <Link 
+            href="/" 
             sx={{ 
-              color: 'text.primary', 
-              textAlign: 'center',
-              fontSize: { xs: '1.75rem', sm: '2.125rem' },
-              wordWrap: 'break-word',
-              fontFamily: '"Lemonada", cursive !important',
-              fontWeight: '700 !important',
-              letterSpacing: '-0.5px',
-            }}
-          >
-            Faclair nan Gèidheal
-          </Typography>
-        </Link>
-        <Typography 
-          variant="subtitle1" 
-          color="text.secondary"
-          sx={{
-            fontFamily: '"Lemonada", cursive',
-            fontSize: { xs: '0.875rem', sm: '1rem' },
-            textAlign: 'center',
-          }}
-        >
-          leis{' '}
-          <Link
-            href="https://angeidhealur.scot/"
-            target="_blank"
-            rel="noopener noreferrer"
-            sx={{
-              color: 'primary.main',
               textDecoration: 'none',
-              fontFamily: '"Lemonada", cursive',
-              fontWeight: 500,
-              '&:hover': {
-                textDecoration: 'underline',
-                color: 'primary.dark',
-              },
-              '&:focus': {
-                outline: '2px solid currentColor',
-                outlineOffset: '2px',
-              },
+              display: 'flex',
+              flexDirection: 'column',
+              alignItems: 'center',
+              gap: 1,
             }}
           >
-            a' Ghèidheal Ùr
+            <Box
+              component="img"
+              src="/faclair-nan-geidheal/assets/logo.png"
+              alt=""
+              onError={(e) => {
+                console.error('Error loading logo:', e);
+                const img = e.target as HTMLImageElement;
+                console.log('Attempted logo URL:', img.src);
+              }}
+              sx={{
+                width: { xs: 80, sm: 100 },
+                height: 'auto',
+                mb: 1,
+                borderRadius: { xs: '10px', sm: '13px' },
+                WebkitBorderRadius: { xs: '10px', sm: '13px' },
+              }}
+            />
+            <Typography 
+              variant="h4" 
+              component="h1" 
+              sx={{ 
+                color: 'text.primary', 
+                textAlign: 'center',
+                fontSize: { xs: '1.75rem', sm: '2.125rem' },
+                wordWrap: 'break-word',
+                fontFamily: '"Lemonada", cursive !important',
+                fontWeight: '700 !important',
+                letterSpacing: '-0.5px',
+              }}
+            >
+              Faclair nan Gèidheal
+            </Typography>
           </Link>
-        </Typography>
+          <Typography 
+            variant="subtitle1" 
+            color="text.secondary"
+            sx={{
+              fontFamily: '"Lemonada", cursive',
+              fontSize: { xs: '0.875rem', sm: '1rem' },
+              textAlign: 'center',
+            }}
+          >
+            leis{' '}
+            <Link
+              href="https://angeidhealur.scot/"
+              target="_blank"
+              rel="noopener noreferrer"
+              sx={{
+                color: 'primary.main',
+                textDecoration: 'none',
+                fontFamily: '"Lemonada", cursive',
+                fontWeight: 500,
+                '&:hover': {
+                  textDecoration: 'underline',
+                  color: 'primary.dark',
+                },
+                '&:focus': {
+                  outline: '2px solid currentColor',
+                  outlineOffset: '2px',
+                },
+              }}
+            >
+              a' Ghèidheal Ùr
+            </Link>
+          </Typography>
+        </Box>
       </Box>
 
       <Paper
-        elevation={3}
-        sx={{
-          p: { xs: 2, sm: 3 },
+        sx={{ 
+          p: 4,
           mb: 4,
-          borderRadius: 2,
-          width: '100%',
-          maxWidth: '600px',
-          mx: 'auto',
         }}
       >
         <TextField
@@ -227,84 +223,89 @@ const SearchPage: React.FC = () => {
       </Paper>
 
       {searchQuery.length >= 2 && (
-        <List
-          id="search-results-list"
-          role="region"
-          aria-label="Toraidhean"
-          aria-live="polite"
-          sx={{
-            width: '100%',
-            maxWidth: '600px',
-            mx: 'auto',
-            '& > *': {
-              breakInside: 'avoid',
-            },
+        <Paper
+          sx={{ 
+            p: 4,
+            mb: 4,
           }}
         >
-          {results.length > 0 ? (
-            results.map((entry) => (
-              <ListItemButton
-                key={entry.id}
-                onClick={() => navigate(`/facal/${entry.id}`, { state: { from: '/' } })}
-                sx={{
-                  mb: 1,
-                  borderRadius: 1,
-                  border: '1px solid',
-                  borderColor: 'divider',
-                  transition: 'all 0.2s ease-in-out',
-                  '&:hover': {
-                    backgroundColor: 'action.hover',
-                    transform: 'translateX(4px)',
-                    borderColor: 'primary.main',
-                    boxShadow: '0 2px 4px rgba(0,0,0,0.1)',
-                  },
-                  '&:active': {
-                    transform: 'translateX(2px)',
-                  },
-                  '&:focus': {
-                    outline: '2px solid currentColor',
-                    outlineOffset: '2px',
-                  },
-                  '@media (max-width: 600px)': {
-                    px: 2,
-                    py: 1.5,
-                  },
-                }}
-              >
-                <ListItemText
-                  primary={entry.gaelic}
-                  primaryTypographyProps={{
-                    variant: 'h6',
-                    sx: { 
-                      fontWeight: 500,
-                      fontSize: { xs: '1rem', sm: '1.25rem' },
+          <List
+            id="search-results-list"
+            role="region"
+            aria-label="Toraidhean"
+            aria-live="polite"
+            sx={{
+              width: '100%',
+              '& > *': {
+                breakInside: 'avoid',
+              },
+            }}
+          >
+            {results.length > 0 ? (
+              results.map((entry) => (
+                <ListItemButton
+                  key={entry.id}
+                  onClick={() => navigate(`/facal/${entry.id}`, { state: { from: '/' } })}
+                  sx={{
+                    mb: 1,
+                    borderRadius: 1,
+                    border: '1px solid',
+                    borderColor: 'divider',
+                    transition: 'all 0.2s ease-in-out',
+                    '&:hover': {
+                      backgroundColor: 'action.hover',
+                      transform: 'translateX(4px)',
+                      borderColor: 'primary.main',
+                      boxShadow: '0 2px 4px rgba(0,0,0,0.1)',
+                    },
+                    '&:active': {
+                      transform: 'translateX(2px)',
+                    },
+                    '&:focus': {
+                      outline: '2px solid currentColor',
+                      outlineOffset: '2px',
+                    },
+                    '@media (max-width: 600px)': {
+                      px: 2,
+                      py: 1.5,
                     },
                   }}
-                />
-                <ChevronRightIcon 
-                  sx={{ 
-                    color: 'text.secondary', 
-                    opacity: 0.5,
-                    fontSize: { xs: '1.25rem', sm: '1.5rem' },
-                  }} 
-                />
-              </ListItemButton>
-            ))
-          ) : (
-            <Typography 
-              variant="body1" 
-              color="text.secondary" 
-              sx={{ 
-                textAlign: 'center',
-                fontSize: { xs: '0.95rem', sm: '1rem' },
-              }}
-            >
-              Chan eil toradh ann
-            </Typography>
-          )}
-        </List>
+                >
+                  <ListItemText
+                    primary={entry.gaelic}
+                    primaryTypographyProps={{
+                      variant: 'h6',
+                      sx: { 
+                        fontWeight: 500,
+                        fontSize: { xs: '1rem', sm: '1.25rem' },
+                      },
+                    }}
+                  />
+                  <ChevronRightIcon 
+                    sx={{ 
+                      color: 'text.secondary', 
+                      opacity: 0.5,
+                      fontSize: { xs: '1.25rem', sm: '1.5rem' },
+                    }} 
+                  />
+                </ListItemButton>
+              ))
+            ) : (
+              <Typography 
+                variant="body1" 
+                color="text.secondary" 
+                sx={{ 
+                  textAlign: 'center',
+                  fontSize: { xs: '0.95rem', sm: '1rem' },
+                }}
+              >
+                Chan eil toradh ann
+              </Typography>
+            )}
+          </List>
+        </Paper>
       )}
-    </Box>
+    </>
   );
 };
 
